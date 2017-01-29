@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/34ff9d4/
+KINGDOM_H	kingdom.h	/^#define KINGDOM_H$/;"	d
+Kingdom	kingdom.h	/^class Kingdom {$/;"	c	namespace:westeros
+count	w2_at_home.cpp	/^    int count = 0;  \/\/ the number of kingdoms in the array$/;"	l	function:main	typeref:typename:int	file:
+display	kingdom.h	/^void display(Kingdom&);$/;"	p	namespace:westeros	typeref:typename:void
+i	w2_at_home.cpp	/^    for (int i = 0; i < count; ++i) {$/;"	l	function:main	typeref:typename:int	file:
+m_name	kingdom.h	/^    char m_name[32];$/;"	m	class:westeros::Kingdom	typeref:typename:char[32]
+m_population	kingdom.h	/^    int m_population;$/;"	m	class:westeros::Kingdom	typeref:typename:int
+main	w2_at_home.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+pKingdoms	w2_at_home.cpp	/^    Kingdom *pKingdoms = nullptr;$/;"	l	function:main	typeref:typename:Kingdom *	file:
+westeros	kingdom.h	/^namespace westeros {$/;"	n
