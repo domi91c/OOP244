@@ -1,0 +1,13 @@
+1) What happens to dynamic memory if it is not deallocated?
+
+
+
+2) What is the difference between dynamic and static memory? Give examples from you code where have you used dynamic memory and where have you
+used static memory.
+
+Static memory is allocated when a program starts and is stored on the stack.
+int arr[1024];
+Dynamic memory is allocated during runtime and is stored on the heap.
+
+3) Explain what have you learned in this workshop
+I learned how to allocate memory for objects.

@@ -26,7 +26,7 @@ class Kingdom {
 void display(Kingdom&);
 void display(Kingdom[], int);
 void display(Kingdom[], int, int);
-void display(Kingdom[], int, char[]);
+void display(Kingdom[], int, const char*);
 
 }
 

@@ -16,7 +16,7 @@ int main(void) {
     int count = 0;  // the number of kingdoms in the array
 
     // TODO: declare the pKingdoms pointer here (don't forget to initialize it)
-    Kingdom *pKingdoms = nullptr;
+    Kingdom *pKingdoms;
 
     cout << "==========" << endl
          << "Input data" << endl

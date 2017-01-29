@@ -9,7 +9,7 @@
 // TODO: include the necessary headers
 #include "kingdom.h"
 #include <iostream>
-#include <string>
+#include <cstring>
 
 using namespace std;
 // TODO: the westeros namespace
@@ -34,7 +34,7 @@ void display(Kingdom kingdom[], int num) {
     cout << "------------------------------" << endl;
 }
 
-void display(Kingdom kingdom[], int num, const int MIN_POPULATION) {
+void display(Kingdom kingdom[], int num, int MIN_POPULATION) {
     cout << "------------------------------" << endl;
     cout << "Kingdoms of Westeros with more than " << MIN_POPULATION
          << " people" << endl;
@@ -48,7 +48,7 @@ void display(Kingdom kingdom[], int num, const int MIN_POPULATION) {
     cout << "------------------------------" << endl;
 }
 
-void display(Kingdom kingdom[], int num, char* KINGDOM_NAME) {
+void display(Kingdom kingdom[], int num, const char* KINGDOM_NAME) {
     bool kingdom_found = false;
     cout << "------------------------------" << endl;
     cout << "Searching for kingdom " << KINGDOM_NAME << " in Westeros" << endl;
