@@ -6,11 +6,22 @@
 !_TAG_PROGRAM_VERSION	0.0.0	/34ff9d4/
 KINGDOM_H	kingdom.h	/^#define KINGDOM_H$/;"	d
 Kingdom	kingdom.h	/^class Kingdom {$/;"	c	namespace:westeros
+TOTAL_POPULATION	kingdom.cpp	/^    int TOTAL_POPULATION = 0;$/;"	l	function:westeros::display	typeref:typename:int	file:
 count	w2_at_home.cpp	/^    int count = 0;  \/\/ the number of kingdoms in the array$/;"	l	function:main	typeref:typename:int	file:
+display	kingdom.cpp	/^void display(Kingdom &kingdom) {$/;"	f	namespace:westeros	typeref:typename:void
+display	kingdom.cpp	/^void display(Kingdom kingdom[], int num) {$/;"	f	namespace:westeros	typeref:typename:void
+display	kingdom.cpp	/^void display(Kingdom kingdom[], int num, const char *KINGDOM_NAME) {$/;"	f	namespace:westeros	typeref:typename:void
+display	kingdom.cpp	/^void display(Kingdom kingdom[], int num, int MIN_POPULATION) {$/;"	f	namespace:westeros	typeref:typename:void
 display	kingdom.h	/^void display(Kingdom&);$/;"	p	namespace:westeros	typeref:typename:void
+display	kingdom.h	/^void display(Kingdom[], int);$/;"	p	namespace:westeros	typeref:typename:void
+display	kingdom.h	/^void display(Kingdom[], int, const char*);$/;"	p	namespace:westeros	typeref:typename:void
+display	kingdom.h	/^void display(Kingdom[], int, int);$/;"	p	namespace:westeros	typeref:typename:void
+i	kingdom.cpp	/^    for (int i = 0; i < num; i++) {$/;"	l	function:westeros::display	typeref:typename:int	file:
 i	w2_at_home.cpp	/^    for (int i = 0; i < count; ++i) {$/;"	l	function:main	typeref:typename:int	file:
+kingdom_found	kingdom.cpp	/^    bool kingdom_found = false;$/;"	l	function:westeros::display	typeref:typename:bool	file:
 m_name	kingdom.h	/^    char m_name[32];$/;"	m	class:westeros::Kingdom	typeref:typename:char[32]
 m_population	kingdom.h	/^    int m_population;$/;"	m	class:westeros::Kingdom	typeref:typename:int
 main	w2_at_home.cpp	/^int main(void) {$/;"	f	typeref:typename:int
-pKingdoms	w2_at_home.cpp	/^    Kingdom *pKingdoms = nullptr;$/;"	l	function:main	typeref:typename:Kingdom *	file:
+pKingdoms	w2_at_home.cpp	/^    Kingdom *pKingdoms;$/;"	l	function:main	typeref:typename:Kingdom *	file:
+westeros	kingdom.cpp	/^namespace westeros {$/;"	n	file:
 westeros	kingdom.h	/^namespace westeros {$/;"	n

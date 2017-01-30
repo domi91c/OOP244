@@ -9,12 +9,14 @@
 // TODO: include the necessary headers
 #include "kingdom.h"
 #include <iostream>
-#include <string>
 
 // TODO: the westeros namespace
 namespace westeros {
 // TODO:definition for display(...)
   void display(Kingdom &kingdom) {
+
+    std::cout << Kin
+    std::cout << king
       std::cout << kingdom.m_name << ", population " << kingdom.m_population << end;
   }
 }

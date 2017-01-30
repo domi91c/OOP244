@@ -1,0 +1,3 @@
+/Users/domi91c/OOP244/OOP-Workshop2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/domi91c/OOP244/OOP-Workshop2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/domi91c/OOP244/OOP-Workshop2/cmake-build-debug/CMakeFiles/OOP_Workshop2.dir

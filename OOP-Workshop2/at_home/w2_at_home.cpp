@@ -1,4 +1,4 @@
-// OOP244 Workshop 2 at_home
+// OOP243 Workshop 2 at_home
 // File w2_at_home.cpp
 // Date 2017-01-26
 // Author Dominic Nunes
@@ -58,8 +58,8 @@ int main(void) {
     display(pKingdoms, count, "Mordor");
     cout << endl;
 
-    /* display(pKingdoms, count, "The_Vale"); */
-    /* cout << endl; */
+    display(pKingdoms, count, "The_Vale");
+    cout << endl;
 
     // TODO: deallocate the dynamic memory here
     delete[] pKingdoms;

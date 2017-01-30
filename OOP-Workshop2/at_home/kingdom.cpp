@@ -8,14 +8,14 @@
 
 // TODO: include the necessary headers
 #include "kingdom.h"
-#include <iostream>
 #include <cstring>
+#include <iostream>
 
 using namespace std;
 // TODO: the westeros namespace
 namespace westeros {
 // TODO:definition for display(...)
-void display(Kingdom& kingdom) {
+void display(Kingdom &kingdom) {
     cout << kingdom.m_name << ", population " << kingdom.m_population << endl;
 }
 
@@ -48,7 +48,13 @@ void display(Kingdom kingdom[], int num, int MIN_POPULATION) {
     cout << "------------------------------" << endl;
 }
 
-void display(Kingdom kingdom[], int num, const char* KINGDOM_NAME) {
+void helloworld() {
+  string helloworld = "23232";
+  helloworld.compare()
+
+}
+
+void display(Kingdom kingdom[], int num, const char *KINGDOM_NAME) {
     bool kingdom_found = false;
     cout << "------------------------------" << endl;
     cout << "Searching for kingdom " << KINGDOM_NAME << " in Westeros" << endl;
@@ -66,3 +72,4 @@ void display(Kingdom kingdom[], int num, const char* KINGDOM_NAME) {
     cout << "------------------------------" << endl;
 }
 }
+

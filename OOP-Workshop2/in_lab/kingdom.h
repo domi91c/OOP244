@@ -22,7 +22,8 @@ class Kingdom {
 
 // TODO: add the declaration for the function display(...),
 //         also in the westeros namespace
-void display(Kingdom &);
+void display
+      (Kingdom &);
 }
 
 #endif
