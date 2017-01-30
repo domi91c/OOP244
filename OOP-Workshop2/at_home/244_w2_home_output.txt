@@ -1,0 +1,62 @@
+Script started on Sat 21 Jan 2017 11:53:45 PM EST
+Han.Solo@matrix:~/oop244/WS2/at-home> ws
+==========
+Input data
+==========
+Enter the number of kingdoms: 5
+Enter the name for kingdom #1: The_Riverlands
+Enter the number people living in The_Riverlands: 123456
+Enter the name for kingdom #2: The_Vale
+Enter the number people living in The_Vale: 234567
+Enter the name for kingdom #3: The_Westernlands
+Enter the number people living in The_Westernlands: 345678
+Enter the name for kingdom #4: The_Stormlands
+Enter the number people living in The_Stormlands: 456789
+Enter the name for kingdom #5: The_Reach
+Enter the number people living in The_Reach: 567890
+==========
+
+------------------------------
+The first kingdom of Westeros
+------------------------------
+The_Riverlands, population 123456
+------------------------------
+
+------------------------------
+Kingdoms of Westeros
+------------------------------
+1. The_Riverlands, population 123456
+2. The_Vale, population 234567
+3. The_Westernlands, population 345678
+4. The_Stormlands, population 456789
+5. The_Reach, population 567890
+------------------------------
+Total population of Westeros: 1728380
+------------------------------
+
+------------------------------
+Kingdoms of Westeros with more than 345678 people
+------------------------------
+The_Westernlands, population 345678
+The_Stormlands, population 456789
+The_Reach, population 567890
+------------------------------
+
+------------------------------
+Searching for kingdom Mordor in Westeros
+------------------------------
+Mordor is not part of Westeros.
+------------------------------
+
+
+------------------------------
+Searching for kingdom The_Vale in Westeros
+------------------------------
+The_Vale, population 234567
+------------------------------
+
+
+Han.Solo@matrix:~/oop244/WS2/at-home> exit
+exit
+
+Script done on Sat 21 Jan 2017 11:56:28 PM EST

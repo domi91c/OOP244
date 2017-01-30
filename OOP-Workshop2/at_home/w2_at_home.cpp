@@ -33,7 +33,7 @@ int main(void) {
 
         cout << "Enter the name for kingdom #" << i + 1 << ": ";
         cin >> pKingdoms[i].m_name;
-        cout << "Enter the number people living " << pKingdoms[i].m_name
+        cout << "Enter the number people living in " << pKingdoms[i].m_name
              << ": ";
         cin >> pKingdoms[i].m_population;
     }
@@ -56,7 +56,7 @@ int main(void) {
 
     // testing that the third overload of "display(...)" works
     display(pKingdoms, count, "Mordor");
-    cout << endl;
+    cout << endl << endl;
 
     display(pKingdoms, count, "The_Vale");
     cout << endl;

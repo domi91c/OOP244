@@ -1,13 +1,15 @@
 1) What happens to dynamic memory if it is not deallocated?
-
-
+You will introduce a memory leak into your program and that memory will be wasted.
 
 2) What is the difference between dynamic and static memory? Give examples from you code where have you used dynamic memory and where have you
 used static memory.
-
 Static memory is allocated when a program starts and is stored on the stack.
 int arr[1024];
-Dynamic memory is allocated during runtime and is stored on the heap.
+int TOTAL_POPULATION = 0;
+
+Dynamic memory is allocated during runtime and is stored on the heap. It must be manually allocated and deleted.
+pKingdoms = new Kingdom[count];
+
 
 3) Explain what have you learned in this workshop
 I learned how to allocate memory for objects.
