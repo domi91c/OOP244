@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/domi91c/OOP244/OOP-Workshop3/in_lab/CreditCard.cpp
+CreditCard.h
+/Users/domi91c/OOP244/OOP-Workshop3/in_lab/CreditCard.h
+cstring
+-
+iostream
+-
+
+/Users/domi91c/OOP244/OOP-Workshop3/in_lab/CreditCard.h
+iostream
+-
+
+/Users/domi91c/OOP244/OOP-Workshop3/in_lab/w3_in_lab.cpp
+iostream
+-
+CreditCard.h
+/Users/domi91c/OOP244/OOP-Workshop3/in_lab/CreditCard.h
+

@@ -17,7 +17,7 @@ class CreditCard {
    public:
     void initialize(unsigned long long creditCardNumber, int instCode,
                     int expiryYear, int expiryMonth, int numberInTheBack);
-    void name(const char cardHolderName[]);
+    void name(char cardHolderName[]);
     void write();
     bool isValid();
 
