@@ -61,6 +61,6 @@ void writeAll(const CreditCard& card) {
     card.write(false);
     cout << endl << "-------------" << endl;
     card.write(true, false);
-    cout << endl << "-------------" << endl;
+    cout << "-------------" << endl;
     card.write(false, false);
 }

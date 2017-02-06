@@ -21,14 +21,6 @@ void CreditCard::name(char cardHolderName[]) {
     strcpy(m_cardHolderName, cardHolderName);
 }
 
-/* void CreditCard::write() { */
-/*     cout << "Cardholder: " << m_cardHolderName << endl; */
-/*     cout << "Card Number: " << m_cardNumber << endl; */
-/*     cout << "Institution: " << m_institutionCode << endl; */
-/*     cout << "Expires: " << m_expiryYear << m_expiryMonth << endl; */
-/*     cout << "Number at the back: " << m_numberInTheBack; */
-/* } */
-
 void CreditCard::write(bool displayName, bool displayCardInfo) const {
     if (displayName) writeName();
     if (displayCardInfo) writeCardInfo();
