@@ -1,0 +1,10 @@
+
+In line number 26 of your output:
+The output should be:
+Can Vanessa and Alice travel together (should be YES)? YES
+But your output is: 
+Can Vanessa and Alice travel together (should be YES)? NO
+                                                       ^
+-------------------------------------------------------|
+Professor's character ASCII code: hex(59), dec(89)
+un-matched character ASCII code: hex(4e), dec(78)
