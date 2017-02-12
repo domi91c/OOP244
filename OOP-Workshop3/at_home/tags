@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/34ff9d4/
+CREDITCARD_H	CreditCard.h	/^#define CREDITCARD_H$/;"	d
+CreditCard	CreditCard.h	/^class CreditCard {$/;"	c	namespace:sict
+MAX_CARD_NUMBER	CreditCard.h	/^#define MAX_CARD_NUMBER /;"	d
+MAX_EXP_YEAR	CreditCard.h	/^#define MAX_EXP_YEAR /;"	d
+MAX_INST_NUMBER	CreditCard.h	/^#define MAX_INST_NUMBER /;"	d
+MAX_NAME_LENGTH	CreditCard.h	/^#define MAX_NAME_LENGTH /;"	d
+MIN_CARD_NUMBER	CreditCard.h	/^#define MIN_CARD_NUMBER /;"	d
+MIN_EXP_YEAR	CreditCard.h	/^#define MIN_EXP_YEAR /;"	d
+MIN_INST_NUMBER	CreditCard.h	/^#define MIN_INST_NUMBER /;"	d
+backNumCheck	CreditCard.cpp	/^         yearCheck = false, monthCheck = false, backNumCheck = false,$/;"	l	function:sict::CreditCard::isValid	typeref:typename:bool	file:
+backNumber	w3_at_home.cpp	/^    int backNumber;$/;"	l	function:main	typeref:typename:int	file:
+cardNumber	w3_at_home.cpp	/^    unsigned long long cardNumber;$/;"	l	function:main	typeref:typename:unsigned long long	file:
+cc	CreditCard.cpp	/^CreditCard *cc = new CreditCard;$/;"	v	namespace:sict	typeref:typename:CreditCard *
+expiryMonth	w3_at_home.cpp	/^    int expiryMonth;$/;"	l	function:main	typeref:typename:int	file:
+expiryYear	w3_at_home.cpp	/^    int expiryYear;$/;"	l	function:main	typeref:typename:int	file:
+finalCheck	CreditCard.cpp	/^         finalCheck;$/;"	l	function:sict::CreditCard::isValid	typeref:typename:bool	file:
+initialize	CreditCard.cpp	/^void CreditCard::initialize(unsigned long long creditCardNumber, int instCode,$/;"	f	class:sict::CreditCard	typeref:typename:void
+initialize	CreditCard.h	/^    void initialize(unsigned long long creditCardNumber, int instCode,$/;"	p	class:sict::CreditCard	typeref:typename:void
+instCheck	CreditCard.cpp	/^    bool nameCheck = false, numCheck = false, instCheck = false,$/;"	l	function:sict::CreditCard::isValid	typeref:typename:bool	file:
+instCode	w3_at_home.cpp	/^    int instCode;$/;"	l	function:main	typeref:typename:int	file:
+isValid	CreditCard.cpp	/^bool CreditCard::isValid() {$/;"	f	class:sict::CreditCard	typeref:typename:bool
+isValid	CreditCard.h	/^    bool isValid();$/;"	p	class:sict::CreditCard	typeref:typename:bool
+m_cardHolderName	CreditCard.h	/^    char m_cardHolderName[MAX_NAME_LENGTH];$/;"	m	class:sict::CreditCard	typeref:typename:char[]
+m_cardNumber	CreditCard.h	/^    unsigned long long m_cardNumber;$/;"	m	class:sict::CreditCard	typeref:typename:unsigned long long
+m_expiryMonth	CreditCard.h	/^    int m_expiryMonth;$/;"	m	class:sict::CreditCard	typeref:typename:int
+m_expiryYear	CreditCard.h	/^    int m_expiryYear;$/;"	m	class:sict::CreditCard	typeref:typename:int
+m_institutionCode	CreditCard.h	/^    int m_institutionCode;$/;"	m	class:sict::CreditCard	typeref:typename:int
+m_numberInTheBack	CreditCard.h	/^    int m_numberInTheBack;$/;"	m	class:sict::CreditCard	typeref:typename:int
+main	w3_at_home.cpp	/^int main() {$/;"	f	typeref:typename:int
+monthCheck	CreditCard.cpp	/^         yearCheck = false, monthCheck = false, backNumCheck = false,$/;"	l	function:sict::CreditCard::isValid	typeref:typename:bool	file:
+myCC	w3_at_home.cpp	/^    CreditCard myCC;$/;"	l	function:main	typeref:typename:CreditCard	file:
+name	CreditCard.cpp	/^void CreditCard::name(char cardHolderName[]) {$/;"	f	class:sict::CreditCard	typeref:typename:void
+name	CreditCard.h	/^    void name(char cardHolderName[]);$/;"	p	class:sict::CreditCard	typeref:typename:void
+name	w3_at_home.cpp	/^    char name[41];$/;"	l	function:main	typeref:typename:char[41]	file:
+nameCheck	CreditCard.cpp	/^    bool nameCheck = false, numCheck = false, instCheck = false,$/;"	l	function:sict::CreditCard::isValid	typeref:typename:bool	file:
+numCheck	CreditCard.cpp	/^    bool nameCheck = false, numCheck = false, instCheck = false,$/;"	l	function:sict::CreditCard::isValid	typeref:typename:bool	file:
+sict	CreditCard.cpp	/^namespace sict {$/;"	n	file:
+sict	CreditCard.h	/^namespace sict {$/;"	n
+slash	w3_at_home.cpp	/^    char slash;$/;"	l	function:main	typeref:typename:char	file:
+write	CreditCard.cpp	/^void CreditCard::write(bool displayName, bool displayCardInfo) const {$/;"	f	class:sict::CreditCard	typeref:typename:void
+write	CreditCard.h	/^    void write();$/;"	p	class:sict::CreditCard	typeref:typename:void
+write	CreditCard.h	/^    void write(bool displayName = true, bool displayCardInfo = true) const;$/;"	p	class:sict::CreditCard	typeref:typename:void
+writeAll	w3_at_home.cpp	/^void writeAll(const CreditCard& card) {$/;"	f	typeref:typename:void
+writeAll	w3_at_home.cpp	/^void writeAll(const CreditCard&);$/;"	p	typeref:typename:void	file:
+writeCardInfo	CreditCard.cpp	/^void CreditCard::writeCardInfo() const {$/;"	f	class:sict::CreditCard	typeref:typename:void
+writeCardInfo	CreditCard.h	/^    void writeCardInfo() const;$/;"	p	class:sict::CreditCard	typeref:typename:void
+writeName	CreditCard.cpp	/^void CreditCard::writeName() const {$/;"	f	class:sict::CreditCard	typeref:typename:void
+writeName	CreditCard.h	/^    void writeName() const;$/;"	p	class:sict::CreditCard	typeref:typename:void
+yearCheck	CreditCard.cpp	/^         yearCheck = false, monthCheck = false, backNumCheck = false,$/;"	l	function:sict::CreditCard::isValid	typeref:typename:bool	file:

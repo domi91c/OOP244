@@ -1,4 +1,3 @@
-#include <iostream>
 
 #ifndef CREDITCARD_H
 #define CREDITCARD_H
@@ -11,7 +10,6 @@
 #define MIN_CARD_NUMBER 4000000000000000
 #define MAX_CARD_NUMBER 4000999999999999
 
-using namespace std;
 namespace sict {
 
 class CreditCard {
