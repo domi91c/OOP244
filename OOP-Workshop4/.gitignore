@@ -1,3 +1,10 @@
+#OOP244 custom
+./in-lab/cmake-build-debug/
+./at-home/cmake-build-debug/
+diff.txt
+error.txt
+output.txt
+
 #codelite
 .clang/
 .codelite/
@@ -15,6 +22,7 @@ Debug/
 ipch/
 x64/
 .vs/
+*.vcxprog*
 
 # Compiled Object files
 *.slo
