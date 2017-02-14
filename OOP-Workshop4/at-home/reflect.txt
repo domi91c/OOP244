@@ -1,0 +1,8 @@
+1. Safe empty state means that each member value has been initialized.
+
+2. Multiple constructors can simplify code by allowing clients to
+initialize objects based on specific needs. In the case of passengers,
+it allows clients to leave date in the safe empty state if it did not 
+need to be changed.
+
+3. I learned how to overload constructors.

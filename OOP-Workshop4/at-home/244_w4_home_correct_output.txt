@@ -1,0 +1,39 @@
+----------------------------------------
+Testing the validation logic
+(only passengers 5, 8 and 11 should be valid)
+----------------------------------------
+Passenger 1: not valid
+Passenger 2: not valid
+Passenger 3: not valid
+Passenger 4: not valid
+Passenger 5: valid
+Passenger 6: not valid
+Passenger 7: not valid
+Passenger 8: valid
+Passenger 9: not valid
+Passenger 10: not valid
+Passenger 11: valid
+Passenger 12: not valid
+Passenger 13: not valid
+Passenger 14: not valid
+Passenger 15: not valid
+----------------------------------------
+
+----------------------------------------
+Testing the display function
+----------------------------------------
+Vanessa will travel to Toronto. The journey will start on 2018-4-20.
+John will travel to Toronto. The journey will start on 2018-4-20.
+Alice will travel to Toronto. The journey will start on 2018-4-20.
+Bob will travel to Paris. The journey will start on 2018-1-20.
+----------------------------------------
+
+----------------------------------------
+Testing the travelWith(...) function.
+----------------------------------------
+Nobody can join David on vacation!
+Everybody can join Ross on vacation!
+Ross will be accompanied by Vanessa, John, Alice.
+Isabela will be accompanied by Vanessa, John, Alice, Jennifer, Mike, Sarah.
+----------------------------------------
+
