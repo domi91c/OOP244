@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/domi91c/OOP244/OOP-Workshop4/at-home/passenger.cpp
+iostream
+-
+passenger.h
+/Users/domi91c/OOP244/OOP-Workshop4/at-home/passenger.h
+cstring
+-
+
+/Users/domi91c/OOP244/OOP-Workshop4/at-home/passenger.h
+
+/Users/domi91c/OOP244/OOP-Workshop4/at-home/w4_at_home.cpp
+iostream
+-
+passenger.h
+/Users/domi91c/OOP244/OOP-Workshop4/at-home/passenger.h
+
