@@ -90,7 +90,7 @@ namespace holiday {
 
     for (int i = 0; i < size; ++i) {
       if (canTravelWith(arrPassengers[i])) {
-        travelPartners[travelPartnerCount] = arrPassengers[travelPartnerCount];
+        travelPartners[travelPartnerCount] = arrPassengers[i];
         travelPartnerCount++;
       }
     }
@@ -103,6 +103,18 @@ namespace holiday {
       cout << "Everybody can join ";
       display(true);
       cout << " on vacation!" << endl;
+      display(true);
+      cout << " will be accompanied by ";
+      for (int j = 0; j < travelPartnerCount; ++j) {
+        if (j < travelPartnerCount - 1) {
+          travelPartners[j].display(true);
+          cout << ", ";
+        } else {
+          travelPartners[j].display(true);
+          cout << "." << endl;
+        }
+
+      }
     } else {
       display(true);
       cout << " will be accompanied by ";
@@ -123,8 +135,8 @@ namespace holiday {
   // TODO: add the canTravelWith(...) function here
   bool Passenger::canTravelWith(const Passenger &passenger) const {
     bool ret =
-      m_departureYear == passenger.m_departureYear && m_departureMonth == passenger.m_departureMonth &&
-      m_departureDay == passenger.m_departureDay && !strcmp(m_destination, passenger.m_destination);
+      this->m_departureYear == passenger.m_departureYear && this->m_departureMonth == passenger.m_departureMonth &&
+      this->m_departureDay == passenger.m_departureDay && !strcmp(this->m_destination, passenger.m_destination);
     return ret;
   }
 
