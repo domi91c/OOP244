@@ -23,7 +23,7 @@ Alice will travel to Paris. The journey will start on 2017-7-1.
 Testing the travelling together logic
 ----------------------------------------
 Can Vanessa and Mike travel together (should be NO)? NO
-Can Vanessa and Alice travel together (should be YES)? NO
+Can Vanessa and Alice travel together (should be YES)? YES
 Can Alice and Vanessa travel together (should be YES)? YES
 Can Mike and Alice travel together (should be NO)? NO
 ----------------------------------------

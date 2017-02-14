@@ -1,0 +1,35 @@
+Script started on Sat 28 Jan 2017 11:59:16 AM EST
+fardad.soleimanloo@matrix:~/oop244/OOPDEV/Workkshops/WS3/DEV/in-lab> ws
+Credit Card app
+===================
+
+Please enter your name: John
+Please enter your credit card number, institution code, expiry date, and security number as follows: 4000123412341234 999 12/1234 999
+> 1000111122223333 17 17/1972 15
+
+Invalid input
+Please enter your credit card number, institution code, expiry date, and security number as follows: 4000123412341234 999 12/1234 999
+> 4000111122223333 17 17/1972 15
+
+Invalid input
+Please enter your credit card number, institution code, expiry date, and security number as follows: 4000123412341234 999 12/1234 999
+> 4000111122223333 301 17/1972 15
+
+Invalid input
+Please enter your credit card number, institution code, expiry date, and security number as follows: 4000123412341234 999 12/1234 999
+> 4000111122223333 301 12/1972 15
+
+Invalid input
+Please enter your credit card number, institution code, expiry date, and security number as follows: 4000123412341234 999 12/1234 999
+> 4000111122223333 301 12/2020 15
+
+Cardholder: John
+Card Number: 4000111122223333
+Institution: 301
+Expires: 12/2020
+Number at the back: 15
+Thank you!
+fardad.soleimanloo@matrix:~/oop244/OOPDEV/Workkshops/WS3/DEV/in-lab> exit
+exit
+
+Script done on Sat 28 Jan 2017 12:00:20 PM EST

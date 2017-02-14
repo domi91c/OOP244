@@ -1,10 +1,10 @@
 
-In line number 26 of your output:
+In line number 17 of your output:
 The output should be:
-Can Vanessa and Alice travel together (should be YES)? YES
+Vanessa will travel to Paris. The journey will start on 2017-7-1.
 But your output is: 
-Can Vanessa and Alice travel together (should be YES)? NO
-                                                       ^
--------------------------------------------------------|
-Professor's character ASCII code: hex(59), dec(89)
-un-matched character ASCII code: hex(4e), dec(78)
+Vanessa will travel to Paris. The journey will start on 1-7-2017.
+                                                        ^
+--------------------------------------------------------|
+Professor's character ASCII code: hex(32), dec(50)
+un-matched character ASCII code: hex(31), dec(49)

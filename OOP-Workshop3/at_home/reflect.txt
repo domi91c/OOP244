@@ -1,0 +1,9 @@
+1. I used features of encansulation by assigning functions 
+and member functions to private and public.
+
+2. The do while loop ensures that its contents runs at least
+once, and continues as long as isValid() returns false, meaning
+that the data has not been inputted correctly.
+
+A long long integer was used for the credit card number because it is 
+such a massive number. It is unsigned because the its sign is not relevant.

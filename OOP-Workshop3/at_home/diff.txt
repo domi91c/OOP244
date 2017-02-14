@@ -1,0 +1,10 @@
+
+In line number 8 of your output:
+The output should be:
+> 1111222233334444 301 12/2020 505
+But your output is: 
+> 4000123412341234 999 12/1234 999
+  ^
+--|
+Professor's character ASCII code: hex(31), dec(49)
+un-matched character ASCII code: hex(34), dec(52)

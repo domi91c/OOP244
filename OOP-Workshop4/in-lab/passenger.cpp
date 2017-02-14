@@ -33,9 +33,9 @@ namespace holiday {
           strcpy(m_destination, destination);
       }
 
-      m_departureYear = 1;
+      m_departureYear = 2017;
       m_departureMonth = 7;
-      m_departureDay = 2017;
+      m_departureDay = 1;
   }
 
   Passenger::~Passenger() {
@@ -47,15 +47,6 @@ namespace holiday {
       bool ret =
           m_departureYear == passenger.m_departureYear && m_departureMonth == passenger.m_departureMonth &&
           m_departureDay == passenger.m_departureDay && !strcmp(m_destination, passenger.m_destination);
-/*      cout << "year: " << m_departureYear << ", passenger: " << passenger.m_departureYear << endl;
-      cout << "month: " << m_departureMonth << ", passenger: " << passenger.m_departureMonth << endl;
-      cout << "day: " << m_departureDay << ", passenger: " << passenger.m_departureDay << endl;
-      cout << "destination: " << m_destination << ", passenger: " << passenger.m_destination << endl;
-      if (ret) {
-          cout << "cantravelwith returns true for " << passenger.m_name << endl;
-      } else {
-          cout << "cantravelwith returns false for " << passenger.m_name << endl;
-      }*/
       return ret;
   }
 
