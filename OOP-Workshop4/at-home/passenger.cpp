@@ -86,20 +86,21 @@ namespace holiday {
 
   void Passenger::travelWith(const Passenger *arrPassengers, int size) {
       int travelPartnerCount = 0;
-      Passenger *travelPartners = new Passenger[travelPartnerCount];
+      Passenger *travelPartners = new Passenger[size];
 
       for (int i = 0; i < size; ++i) {
-
-          if (!this->isEmpty() && this->canTravelWith(arrPassengers[i])) {
-              travelPartners[i] = arrPassengers[i];
+          if (canTravelWith(arrPassengers[i])) {
+              travelPartners[travelPartnerCount] = arrPassengers[travelPartnerCount];
               travelPartnerCount++;
           }
       }
 
       if (travelPartnerCount == 0) {
-          cout << "Nobody can join PASSENGER_NAME on vacation!" << endl;
+          cout << "Nobody can join ";
+          display(true);
+          cout << " on vacation!" << endl;
       } else {
-          this->display(true);
+          display(true);
           cout << " will be accompanied by ";
           for (int j = 0; j < travelPartnerCount; ++j) {
               if (j < travelPartnerCount - 1) {
@@ -113,8 +114,6 @@ namespace holiday {
           }
       }
 
-      delete[]
-          travelPartners;
   }
 
 // TODO: add the canTravelWith(...) function here
@@ -127,16 +126,8 @@ namespace holiday {
 
 // TODO: add the isEmpty() function here
   bool Passenger::isEmpty() const {
-      bool ret = false;
-//      cout << "m_name= " << m_name << endl;
-//      cout << "m_destination= " << m_destination << endl;
-//      cout << "m_year= " << m_departureYear << endl;
-//      cout << "m_month= " << m_departureMonth << endl;
-//      cout << "m_daay= " << m_departureDay << endl;
-      if (m_name[0] == '\0' || m_destination[0] == '\0' || m_departureYear == 0 ||
-          m_departureMonth == 0 || m_departureDay == 0) {
-          ret = true;
-      }
+      bool ret = m_name[0] == '\0' || m_destination[0] == '\0' || m_departureYear == 0 ||
+                 m_departureMonth == 0 || m_departureDay == 0;
       return ret;
   }
 
