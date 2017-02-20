@@ -50,7 +50,7 @@ namespace sict {
 // TODO: write the implementation of display function HERE
   void Fraction::display() const {
       if (isEmpty()) {
-          cout << "Invalid Fraction Output!";
+          cout << "Invalid Fraction Object!";
       } else if (denom == 1) {
           cout << num;
       } else {
