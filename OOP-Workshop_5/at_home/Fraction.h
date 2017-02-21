@@ -1,6 +1,6 @@
-// OOP244 Workshop 5 in_lab
+// OOP244 Workshop 5 at_home
 // File Fraction.h
-// Date 2017-02-15
+// Date 2017-02-21
 // Author Dominic Nunes
 // Student Number 016-183-121
 // Email dcnunes@myseneca.ca
@@ -38,7 +38,7 @@ namespace sict {
     // member operator functions
 
     // TODO: write the prototype of member operator+= function HERE
-    Fraction& operator+=(Fraction f2);
+    Fraction &operator+=(Fraction f2);
 
     // TODO: write the prototype of member operator+ function HERE
     Fraction operator+(Fraction f2);
@@ -46,7 +46,10 @@ namespace sict {
     // TODO: write the prototype of member operator* function HERE
     Fraction operator*(Fraction f2);
 
-    Fraction operator==(Fraction f2);
+    bool operator==(Fraction f2);
+    bool operator!=(Fraction f2);
+    operator double();
+    operator int();
 
   };
 };

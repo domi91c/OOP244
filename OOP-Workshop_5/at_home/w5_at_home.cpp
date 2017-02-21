@@ -1,11 +1,10 @@
-// OOP244 Workshop 5: operators overloading
-// File: w5_in_lab.cpp
-// Version: 1.1 Corrected the typo in output
-// Date: 2016/01/22
-// Author: Heidar Davoudi
-// Description:
-// This file tests in-lab section of your workshop
-/////////////////////////////////////////////
+// OOP244 Workshop 5 at_home
+// File w5_at_home.cpp
+// Date 2017-02-21
+// Author Dominic Nunes
+// Student Number 016-183-121
+// Email dcnunes@myseneca.ca
+
 
 #include <iostream>
 #include "Fraction.h"
@@ -13,14 +12,13 @@
 using namespace sict;
 using namespace std;
 
-
 int main(){
 
     cout << "------------------------------" << endl;
 
     cout << "Fraction Class Operators Test:" << endl;
     cout << "------------------------------" << endl;
-    
+
     Fraction A;
     cout << "Fraction A; // ";
     cout << "A = ";
@@ -33,7 +31,7 @@ int main(){
     B.display();
     cout << endl;
 
-    
+
     Fraction C(-5, 15);
     cout << "Fraction C(-5, 15); //";
     cout << " C = " ;
@@ -84,6 +82,6 @@ int main(){
     cout << endl << "The sum of elements in S equals " ;
     s.display();
     cout << endl ;
-   
+
     return 0;
 }
