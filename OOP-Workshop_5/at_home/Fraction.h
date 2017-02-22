@@ -14,8 +14,8 @@ using namespace std;
 
 namespace sict {
 
-  class Fraction {
-  private:
+class Fraction {
+   private:
     int num;    // Numerator
     int denom;  // Denominator
 
@@ -24,7 +24,7 @@ namespace sict {
     int max();  // returns the maximum of num and denom
     int min();  // returns the minimum of num and denom
 
-  public:
+   public:
     void reduce();  // simplifies a Fraction number by dividing the
     // numerator and denominator to their greatest common divisor
 
@@ -50,7 +50,6 @@ namespace sict {
     bool operator!=(Fraction f2);
     operator double();
     operator int();
-
-  };
+};
 };
 #endif

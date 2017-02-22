@@ -110,29 +110,29 @@ namespace sict {
 
   // TODO: write the implementation of member operator== function HERE
   bool Fraction::operator==(Fraction f2) {
-      bool ret = false;
+      bool eq = false;
       if (isEmpty() || f2.isEmpty()) {
-          ret = false; // check if in safe empty state
+          eq = false; // check if in safe empty state
       }
           // cross multiply to see if fractions are equivalent
       else if ((num * f2.denom) == (denom * f2.num)) {
-          ret = true;
+          eq = true;
       }
-      return ret;
+      return eq;
   }
 
 
   // TODO: write the implementation of member operator!= function HERE
   bool Fraction::operator!=(Fraction f2) {
-      bool ret = false;
+      bool neq = false;
       if (isEmpty() || f2.isEmpty()) {
-          ret = false; // check if in safe empty state
+          neq = false; // check if in safe empty state
       }
-          // cross multiply to see if fractions are equivalent. if they are, return false.
+          // cross multiply to see if fractions are not equivalent.
       else if ((num * f2.denom) != (denom * f2.num)) {
-          ret = true;
+          neq = true;
       }
-      return ret;
+      return neq;
   }
 
   // TODO: write the implementation of member operator double () function HERE

@@ -1,0 +1,7 @@
+1.) The operator+= function should return a reference to Fraction so that a Fraction object can 
+be assigned it's result.
+
+2.) Because we created the operator int() function, in this expression Fraction was cast to an integer, 
+so a specific function for Fraction and integer addition was not required.
+
+3.) I learned that functions can be created to cast the objects of user-created classes to primitive data types.
