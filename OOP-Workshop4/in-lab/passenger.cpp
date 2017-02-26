@@ -53,8 +53,8 @@ namespace holiday {
   // TODO: add the isEmpty() function here
   bool Passenger::isEmpty() const {
       bool ret = false;
-      if (this->m_name[0] == '\0' || this->m_destination[0] == '\0' || this->m_departureYear == 0 ||
-          this->m_departureMonth == 0 || this->m_departureDay == 0) {
+      if (m_name[0] == '\0' || m_destination[0] == '\0' || m_departureYear == 0 ||
+          m_departureMonth == 0 || m_departureDay == 0) {
           ret = true;
       }
       return ret;
@@ -63,14 +63,14 @@ namespace holiday {
   // below is the member function already provided
   // TODO: read it and understand how it accomplishes its task
   void Passenger::display(bool nameOnly) const {
-      if (false == this->isEmpty()) {
-          cout << this->m_name;
+      if (false == isEmpty()) {
+          cout << m_name;
           if (false == nameOnly) {
-              cout << " will travel to " << this->m_destination << ". "
+              cout << " will travel to " << m_destination << ". "
                    << "The journey will start on "
-                   << this->m_departureYear << "-"
-                   << this->m_departureMonth << "-"
-                   << this->m_departureDay
+                   << m_departureYear << "-"
+                   << m_departureMonth << "-"
+                   << m_departureDay
                    << "." << endl;
           }
       } else {
