@@ -5,8 +5,8 @@
 // Student Number 016-183-121
 // Email dcnunes@myseneca.ca
 
-#ifndef CONTACT_H__
-#define CONTACT_H__
+#ifndef COMMUNICATION_CONTACT_H__
+#define COMMUNICATION_CONTACT_H__
 
 // TODO: add namespace here
 namespace communication {
@@ -26,11 +26,6 @@ namespace communication {
     bool display() const;
     // TODO: add the isEmpty function here
     bool isEmpty() const;
-
-  public:
-    Contact(const Contact& other); // Copy Constructor
-    Contact& operator=(const Contact& other); // Copy Assignment Operator
-    void addPhoneNumber(long long phoneNumber); // Modifier
   };
 
 }
