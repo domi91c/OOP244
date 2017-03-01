@@ -4,7 +4,6 @@
 using namespace std;
 
 namespace communication {
-  Contact::Contact(const Contact &other) {}
 
   Contact::Contact() {
       m_name[0] = '\0';
@@ -60,6 +59,8 @@ namespace communication {
 
   }
 /*
+  Contact::Contact(const Contact &other) {}
+
   Contact &Contact::operator=(const Contact &other) {
       if (this != &other) {
           m_name[0] = other.m_name[0];
