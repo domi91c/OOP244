@@ -16,7 +16,7 @@ int main()
 	cout << "----------------------------------------" << endl;
 	cout << "Testing the default constructor!" << endl;
 	cout << "----------------------------------------" << endl;
-	communication::Contact empty;
+	Contact empty;
 	empty.display();
 	cout << "----------------------------------------" << endl << endl;
 
