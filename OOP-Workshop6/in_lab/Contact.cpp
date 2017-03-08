@@ -58,30 +58,6 @@ namespace communication {
       return true;
 
   }
-/*
-  Contact::Contact(const Contact &other) {}
-
-  Contact &Contact::operator=(const Contact &other) {
-      if (this != &other) {
-          m_name[0] = other.m_name[0];
-          m_phoneNumbers = other.m_phoneNumbers;
-
-          delete[] m_phoneNumbers;
-
-          if (other.m_phoneNumbers != nullptr) {
-              m_phoneNumbers = new long long[m_noOfPhoneNumbers];
-              for (int i = 0; i < m_noOfPhoneNumbers; i++)
-                  m_phoneNumbers[i] = other.m_phoneNumbers[i];
-          } else {
-              m_phoneNumbers = nullptr;
-          }
-      }
-      return *this;
-
-  }
-
-  void Contact::addPhoneNumber(long long phoneNumber) {
-  }*/
 
 }
 
