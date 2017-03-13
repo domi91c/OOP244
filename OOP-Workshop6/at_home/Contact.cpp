@@ -113,7 +113,6 @@ namespace communication {
       temp[m_noOfPhoneNumbers] = phoneNumber;
       m_phoneNumbers = temp;
       m_noOfPhoneNumbers++;
-      cout << *m_phoneNumbers << endl;
   }
 
 }

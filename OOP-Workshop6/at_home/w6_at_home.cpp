@@ -5,7 +5,7 @@ using namespace std;
 using namespace communication;
 
 int main() {
-	communication::Contact theContact("John Doe", nullptr, 0);
+	Contact theContact("John Doe", nullptr, 0);
 	theContact.addPhoneNumber(14161234567);
 	theContact.addPhoneNumber(14162345678);
 	theContact.addPhoneNumber(14163456789);
