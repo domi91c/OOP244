@@ -42,7 +42,6 @@ namespace communication {
       delete[] m_phoneNumbers;
   }
 
-
   bool Contact::isEmpty() const {
       return m_name[0] == '\0' || strcmp(m_name, "") == 0;
   }
@@ -52,6 +51,7 @@ namespace communication {
           cout << "Empty contact!" << endl;
       } else {
           cout << m_name << endl;
+          // Format output
           for (int i = 0; i < m_noOfPhoneNumbers; i++) {
               if (10000000000 <= m_phoneNumbers[i] &&
                   m_phoneNumbers[i] <= 999999999999) {
@@ -74,7 +74,7 @@ namespace communication {
       m_phoneNumbers = other.m_phoneNumbers;
       m_noOfPhoneNumbers = other.m_noOfPhoneNumbers;
       if (other.m_phoneNumbers != nullptr) {
-          m_phoneNumbers = new long long[m_noOfPhoneNumbers]; // Allocate new memory if not equal to the nullptr.
+          m_phoneNumbers = new long long[m_noOfPhoneNumbers]; 
           for (int i = 0; i < m_noOfPhoneNumbers; i++) {
               m_phoneNumbers[i] = other.m_phoneNumbers[i];  // Copy resource data.
           }
@@ -88,17 +88,13 @@ namespace communication {
 
       if (this != &other) {
 
-          // Shallow copy non-resource variables.
           m_name[0] = other.m_name[0];
           *m_phoneNumbers = *other.m_phoneNumbers;
           m_noOfPhoneNumbers = other.m_noOfPhoneNumbers;
-          // Deallocate previously allocated dynamic memory.
           delete[]  m_phoneNumbers;
 
-          // Allocate new dynamic memory if not equal to the nullptr.
           if (other.m_phoneNumbers != nullptr) {
               m_phoneNumbers = new long long[m_noOfPhoneNumbers];
-              // Copy the resource data.
               for (int i = 0; i < m_noOfPhoneNumbers; i++)
                   m_phoneNumbers[i] = other.m_phoneNumbers[i];
           } else {
@@ -109,15 +105,15 @@ namespace communication {
   }
 
   void Contact::addPhoneNumber(long long phoneNumber) {
-      long long *temp = new long long[this->m_noOfPhoneNumbers];
+      long long *temp = new long long[m_noOfPhoneNumbers];
 
       for (int i = 0; i < m_noOfPhoneNumbers; i++) {
           temp[i] = m_phoneNumbers[i];
       }
       temp[m_noOfPhoneNumbers] = phoneNumber;
-      this->m_phoneNumbers = temp;
-      this->m_noOfPhoneNumbers++;
-      cout << *this->m_phoneNumbers << endl;
+      m_phoneNumbers = temp;
+      m_noOfPhoneNumbers++;
+      cout << *m_phoneNumbers << endl;
   }
 
 }
