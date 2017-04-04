@@ -1,0 +1,26 @@
+
+------------------------------------------------------------
+Greek Heros
+Quarter Finals
+AncientBattle! Achilles vs Hector : Winner is Hector in 4 rounds.
+AncientBattle! Hercules vs Theseus : Winner is Hercules in 4 rounds.
+AncientBattle! Odysseus vs Ajax : Winner is Ajax in 3 rounds.
+AncientBattle! Atalanta vs Hippolyta : Winner is Atalanta in 4 rounds.
+
+Semi Finals
+AncientBattle! Hector vs Hercules : Winner is Hector in 7 rounds.
+AncientBattle! Ajax vs Atalanta : Winner is Ajax in 2 rounds.
+
+Finals
+AncientBattle! Hector vs Ajax : Winner is Hector in 4 rounds.
+------------------------------------------------------------
+Comic book SuperHeros
+Semi Finals
+SuperFight! Superman vs The_Hulk : Winner is The_Hulk in 5 rounds.
+SuperFight! WonderWoman vs Raven : Winner is WonderWoman in 3 rounds.
+
+Finals
+SuperFight! The_Hulk vs WonderWoman : Winner is WonderWoman in 6 rounds.
+------------------------------------------------------------
+Best Greeks Hero vs Best Comic Book SuperHero
+AncientBattle! Hector vs WonderWoman : Winner is WonderWoman in 6 rounds.

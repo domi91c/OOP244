@@ -1,0 +1,7 @@
+1. It's possible for m_health to go below 0, and it must be signed to allow negative values.
+
+2. Hero does not need to know about SuperHero, and can exist on it's own without it. SuperHero inherits 
+from Hero, and is based off the Hero class, so it does need to know about it.
+
+3. It prints AncientBattle.
+
