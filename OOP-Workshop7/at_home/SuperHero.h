@@ -1,12 +1,18 @@
+// OOP244 Workshop 7 at_home
+// File SuperHero.h
+// Date 2017-04-03
+// Author Dominic Nunes
+// Student Number 016-183-121
+// Email dcnunes@myseneca.ca
+
+
+
 #ifndef SUPERHERO_H
 #define SUPERHERO_H
 
-
 #include "Hero.h"
 
-
-class SuperHero: public Hero
-{
+class SuperHero: public Hero {
 
     unsigned m_superPowerAttack;
     unsigned m_superPowerDefend;
@@ -15,20 +21,14 @@ public:
 
     // constructors  
     SuperHero();
-    SuperHero(const char* name, 
-            unsigned health, 
+    SuperHero(const char* name,
+            unsigned health,
             unsigned attack,
-            // the following 2 parameters are special for SuperHeros
-            unsigned superPowerAttack, 
+            unsigned superPowerAttack,
             unsigned superPowerDefend);
 
-    unsigned getAttack() const;
-        
-        
-    // friend global helper function to assign damage to 2 heroes at the same time.
-    friend void apply_damage ( SuperHero& A,  SuperHero& B);
- 
- 
- };
+    friend void apply_damage(SuperHero& A, SuperHero& B);
+
+};
 
 #endif
