@@ -1,0 +1,15 @@
+------------------------------
+Fraction Class Operators Test:
+------------------------------
+Fraction A; // A = Invalid Fraction Object!
+Fraction B(1, 3); // B = 1/3
+Fraction C(-5, 15); // C = Invalid Fraction Object!
+Fraction D(2, 4); // D = 1/2
+Fraction E(8, 2); // E = 2
+
+(B*Rational(6) == E) equals 1
+(A == C) equals 0
+(double) B equals 0.333
+(int) B equals 0
+S := 1/2, 3/4, 1, 5/4, 3/2, 7/4, 2, 9/4, 5/2, 11/4, 
+The sum of elements in S equals 65/4
