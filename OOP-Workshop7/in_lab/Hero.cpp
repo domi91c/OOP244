@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 //////////////////////////////////////////////
 // Default constructor
 //
@@ -27,7 +26,7 @@ Hero::Hero(const char name[], unsigned maximumHealth, unsigned attack)
 /////////////////////////////////////////////////////////
 // 
 // Hero::display function
-void Hero::display(ostream &out) const
+void Hero::display(ostream& out) const
 {
     if (!isEmpty()) {
         cout << m_name;
@@ -40,7 +39,7 @@ void Hero::display(ostream &out) const
 //
 bool Hero::isEmpty() const
 {
-    return m_name[0] == '\0' && m_health == 0 && m_maximumHealth == 0 && m_attack == 0;
+    return m_name[0]=='\0' && m_health==0 && m_maximumHealth==0 && m_attack==0;
 }
 
 /////////////////////////////////////////////////

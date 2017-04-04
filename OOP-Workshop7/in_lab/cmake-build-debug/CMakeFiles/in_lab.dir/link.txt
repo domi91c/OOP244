@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/in_lab.dir/fight.cpp.o CMakeFiles/in_lab.dir/Hero.cpp.o CMakeFiles/in_lab.dir/w7_in_lab.cpp.o  -o in_lab 

@@ -1,1 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/OOP_Workshop2.dir/at_home/kingdom.cpp.o CMakeFiles/OOP_Workshop2.dir/at_home/w2_at_home.cpp.o  -o OOP_Workshop2 

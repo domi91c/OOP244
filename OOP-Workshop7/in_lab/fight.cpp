@@ -15,7 +15,7 @@ using namespace std;
 
 //////////////////////
 // Global helper function
-// compute the damage that A inflicts on B 
+// compute the damage that A inflicts on B
 // and of B on A
 //
 void apply_damage(Hero &A, Hero &B)
