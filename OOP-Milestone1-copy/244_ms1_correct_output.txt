@@ -1,0 +1,95 @@
+Script started on Wed 15 Mar 2017 12:15:12 AM EDT
+jabba.thehutt@matrix:~/oop244/FinalProject/Milestone1> ms1
+Checking defined values, POS.h: 
+Passed!
+Checking define values for error code in Data.h
+Passed!
+Checking defined values passed, now run test no 2!
+##################
+Testing Date constructors and operator<< overload; 
+Test Date: 2017/03/15
+Passed!
+Testing Date(int, int, int) constructor and operator>> overload; 
+enter the following date, 2018/10/18
+>2018/10/18
+Passed!
+Testing Date(int, int, int,int,int) constructor and operator>> overload; 
+enter the following date, 2015/9/7, 14:30
+>2015/9/7, 14:30
+Passed!
+Testing Date(int, int, int,int,int=0) constructor and operator>> overload; 
+enter the following date, 2015/9/7, 15:0
+>2015/9/7, 15:0
+Passed!
+You passed all Constructor tests, run test no 3!
+##################
+Testing the logical operators: 
+testing operator==
+passed!
+testing operator>=
+passed!
+testing operator<=
+passed!
+testing operator!=
+passed!
+testing operator<
+passed!
+testing operator>
+passed!
+testing operator<=
+passed!
+testing operator>=
+passed!
+You passed logical operator tests, now run test no 4!
+##################
+Testing error handling in read funciton;
+cin faliure detection, 
+Please enter the following string "abcd": abcd
+passed!
+Year validation, 
+Please enter the following string "10/1/1": 10/1/1
+You entered: 10/01/01
+passed!
+Month validation, 
+Please enter the following string "2000/13/1": 2000/13/1
+You entered: 2000/13/01
+Passed
+Day validation, 
+Please enter the following string "2000/1/50": 2000/1/50
+You entered: 2000/01/50
+Passed!
+Day validation, leap year:
+Please enter the following string "2016/2/29": 2016/2/29
+You entered: 2016/02/29
+passed!
+Hour validation, 
+Please enter the following string "2000/1/1, 25:10": 2000/1/1, 25:10
+You entered: 2000/01/01, 25:10
+Passed!
+Minute validation, 
+Please enter the following string "2000/1/1, 23:60": 2000/1/1, 23:60
+You entered: 2000/01/01, 23:60
+Passed!
+You passed all error handling tests.
+
+ If you have started with test no 1 and came down to here, 
+ you can now work on Error class.
+##################
+Testing Error Message
+Nothing here: ><
+isClear(): Passed!
+Testing DMA: 
+1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%100%
+Some error message that is really long long  long  long  long  long  long  long long  long  long  long  long  long  long  long  long  long  long  long  long long  long  long  long  long  long  long  long  long  long  long  long  long long  long  long  long  long  long  long  long  long  long  long  long  long long  long  long  long  long  long  long  long  long  long  long  long  long long  long  long  long  long  long  long  long  long  long  long  long  long
+isClear(): Passed!
+Short Error Message is the same as Short Error Message
+isClear(): Passed!
+Nothing here: ><
+isClear(): Passed!
+passed
+##################
+All tests passed, you may submit milestone 1
+jabba.thehutt@matrix:~/oop244/FinalProject/Milestone1> exit
+exit
+
+Script done on Wed 15 Mar 2017 12:18:05 AM EDT
