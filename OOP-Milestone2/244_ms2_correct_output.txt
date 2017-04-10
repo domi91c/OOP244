@@ -1,0 +1,24 @@
+Script started on Wed 15 Mar 2017 02:31:25 AM EDT
+Lando.Calrissian@matrix:~/oop244/FinalProject/Milestone2> ms2
+Linear: one two 
+As is: 
+one
+two
+
+Enter the folowing: 
+three<ENTER>
+four<ENTER>
+Ctrl-D
+
+three
+four
+one two three four 
+one
+two
+three
+four
+
+Lando.Calrissian@matrix:~/oop244/FinalProject/Milestone2> exit
+exit
+
+Script done on Wed 15 Mar 2017 02:31:44 AM EDT
