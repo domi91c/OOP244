@@ -56,7 +56,7 @@ public:
 
     // Functions for input
     virtual std::ostream& write(std::ostream&, bool) const;
-    virtual std::istream& read(std::istream&);
+    /* virtual std::istream& read(std::istream&); */
 
 };
 
