@@ -1,5 +1,5 @@
-Script started on Tue 11 Apr 2017 01:47:28 PM EDT
-dcnunes@matrix:~/oop244/Milestones/OOP-Milestone3> ms3
+Script started on Wed 22 Mar 2017 11:59:50 AM EDT
+Admiral.Ackbar@matrix:~/oop244/OOP-Milestone3> ms3
 Please enter the following informartion for Item:
 sku: 123<ENTER>
 name: abcd<ENTER>
@@ -67,7 +67,7 @@ Cost:11.30
 After adding 20:
 -------------------------
 123: abcd
-Qty: 10
+Qty: 30
 Cost:11.30
 -------------------------
 returned value: 30
@@ -75,7 +75,7 @@ Testing operator-=  I1-= 20...
 Original Item:
 -------------------------
 123: abcd
-Qty: 10
+Qty: 30
 Cost:11.30
 -------------------------
 After deducting 20:
@@ -84,7 +84,7 @@ After deducting 20:
 Qty: 10
 Cost:11.30
 -------------------------
-returned value: -10
+returned value: 10
 Setting I1 not to be taxed:
 Original Item but no tax:
 -------------------------
@@ -93,9 +93,9 @@ Qty: 10
 Cost:10.00
 -------------------------
 operator+=(double, Item):
-100.00=0.00
+100.00=100.00
 
-dcnunes@matrix:~/oop244/Milestones/OOP-Milestone3> exit
+Admiral.Ackbar@matrix:~/oop244/OOP-Milestone3> exit
 exit
 
-Script done on Tue 11 Apr 2017 01:47:45 PM EDT
+Script done on Wed 22 Mar 2017 12:00:35 PM EDT
