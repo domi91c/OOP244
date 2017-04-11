@@ -10,11 +10,9 @@
 #include <fstream>
 #include <iostream>
 
-//ict namespace
 namespace ict {
 class PosIO {
 public:
-    // virtual methods
     virtual std::fstream& save(std::fstream& file) const { return file; }
     virtual std::fstream& load(std::fstream& file) { return file; }
     virtual std::ostream& write(std::ostream& os, bool linear) const { return os; }

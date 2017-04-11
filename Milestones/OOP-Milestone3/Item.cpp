@@ -6,19 +6,14 @@
 // Email dcnunes@myseneca.ca
 
 #define _CRT_SECURE_NO_WARNINGS
-// Lib includes
 #include<iostream>
 #include<cstring>
 
-// inlcude Item and POS header files
 #include "POS.h"
 #include "PosIO.h"
 #include "Item.h"
 using namespace std;
 namespace ict {
-
-
-// Item class implementation
 
 Item::Item()
 {
@@ -29,7 +24,6 @@ Item::Item()
     m_quantity = 0;
 }
 
-/* Four argument constructor*/
 Item::Item(const char sku[], const char* name, double price, bool taxed)
 {
     strcpy(m_sku, sku);
@@ -40,7 +34,6 @@ Item::Item(const char sku[], const char* name, double price, bool taxed)
     m_quantity = 0;
 }
 
-/* Copy Constructor*/
 Item::Item(const Item& I)
 {
     m_name = nullptr;
@@ -51,7 +44,7 @@ Item::Item(const Item& I)
     m_taxed = I.m_taxed;
     m_quantity = I.m_quantity;
 }
-/* Copy assignment operator*/
+
 Item& Item::operator=(const Item& I2)
 {
     if (m_name!=nullptr && m_name[0]!='\0') {
@@ -66,13 +59,11 @@ Item& Item::operator=(const Item& I2)
     return *this;
 }
 
-/* Virtual destructor*/
 Item::~Item()
 {
     delete[] m_name;
 }
 
-/* Void members (Modifiers)*/
 void Item::sku(const char* d_sku)
 {
     strcpy(m_sku, d_sku);
@@ -103,7 +94,7 @@ void Item::quantity(int d_quantity)
     m_quantity = d_quantity;
 }
 
-/*	Query Functions*/
+//	Query Functions
 const char* Item::sku() const
 {
     return m_sku;
@@ -136,13 +127,13 @@ double Item::cost() const
     }
 }
 
-/* IsEmpty function*/
+// IsEmpty function
 bool Item::isEmpty()
 {
     return ((m_sku[0] = '\0') && (m_name = nullptr) && (m_price = 0) && (m_taxed = 0) && (m_quantity = 0));
 }
 
-/* Assignment Operators*/
+// Assignment Operators
 bool Item::operator==(const char* d_sku)
 {
     return (strcmp(d_sku, m_sku)==0);
@@ -158,7 +149,7 @@ int Item::operator+=(int quantity)
     return Item::quantity()+quantity;
 }
 
-/* Operator+= for Item Class*/
+// Operator+= for Item Class
 double operator+=(double& d, const Item& I)
 {
     return d+(I.price()*I.quantity());
@@ -169,7 +160,6 @@ std::ostream& Item::write(std::ostream& os, bool linear) const
     return os;
 }
 
-/* Operator << and >> overloads*/
 std::istream& operator>>(std::istream& is, Item& r)
 {
     r.read(is);
