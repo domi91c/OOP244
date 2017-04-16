@@ -30,7 +30,7 @@ public:
     // methods
     void clear();
     bool isClear() const;
-    void message(const char* value);
+    void message(const char* msg);
 
     // cast overloads
     operator const char*() const;

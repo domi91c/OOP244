@@ -38,23 +38,23 @@ void Error::clear()
     }
 }
 
-void Error::message(const char* value)
+void Error::message(const char* msg)
 {
     clear();
-    char* temporary = new char[strlen(value)+1];
+    char* temp = new char[strlen(msg)+1];
 
-    strcpy(temporary, value);
-    m_message = temporary;
+    strcpy(temp, msg);
+    m_message = temp;
 }
 
 bool Error::isClear() const
 {
-    bool Msg = false;
+    bool msg = false;
 
     if (m_message==nullptr) {
-        Msg = true;
+        msg = true;
     }
-    return Msg;
+    return msg;
 }
 
 Error::operator const char*() const { return m_message; }
@@ -70,4 +70,3 @@ std::ostream& operator<<(std::ostream& os, const Error& error)
     return os;
 }
 }
-
