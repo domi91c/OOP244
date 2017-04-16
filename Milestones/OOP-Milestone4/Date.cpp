@@ -4,6 +4,7 @@
 // Author Dominic Nunes
 // Student Number 016-183-121
 // Email dcnunes@myseneca.ca
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <ctime>
 #include <iomanip>
