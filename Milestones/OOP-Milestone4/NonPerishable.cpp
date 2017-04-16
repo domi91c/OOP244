@@ -15,7 +15,8 @@
 
 using namespace std;
 namespace ict {
-bool NonPerishable::ok() const {
+bool NonPerishable::ok() const
+{
     if (this->m_err.isClear())  // Returns the m_err.isClear() true or else
         // returns false.
         return true;
@@ -23,11 +24,13 @@ bool NonPerishable::ok() const {
         return false;
 }
 
-void NonPerishable::error(const char* message) {
+void NonPerishable::error(const char* message)
+{
     m_err = message;  // Sets the m_err to message.
 }
 
-std::istream& NonPerishable::read(std::istream& is) {
+std::istream& NonPerishable::read(std::istream& is)
+{
     is.clear();
     this->m_err.clear();
     char s[MAX_SKU_LEN];
@@ -37,11 +40,11 @@ std::istream& NonPerishable::read(std::istream& is) {
     int q;
     char ch = signature();
 
-    if (ch == 'N') cout << "Item Entry:" << endl;
+    if (ch=='N') cout << "Item Entry:" << endl;
     cout << "Sku: ";
     is >> s;
 
-    if (is.fail() == false) {
+    if (is.fail()==false) {
         sku(s);
     }
 
@@ -55,13 +58,15 @@ std::istream& NonPerishable::read(std::istream& is) {
         cout << "Taxed: ";
         is >> t;
 
-        if (!(t == 'Y' || t == 'y' || t == 'N' || t == 'n')) {
+        if (!(t=='Y' || t=='y' || t=='N' || t=='n')) {
             m_err.message("Invalid Taxed Entry, (y)es or (n)o");
             is.setstate(ios::failbit);
-        } else {
-            if (t == 'y' || t == 'Y') {
+        }
+        else {
+            if (t=='y' || t=='Y') {
                 taxed(true);
-            } else if (t == 'n' || t == 'N') {
+            }
+            else if (t=='n' || t=='N') {
                 taxed(false);
             }
             cout << "Quantity: ";
@@ -70,18 +75,21 @@ std::istream& NonPerishable::read(std::istream& is) {
             if (is.fail()) {
                 m_err.message("Invalid Quantity Entry");
                 is.setstate(ios::failbit);
-            } else {
+            }
+            else {
                 quantity(q);
             }
         }
-    } else {
+    }
+    else {
         m_err.message("Invalid Price Entry");
         is.setstate(ios::failbit);  // The read returns the is.
     }
     return is;
 }
 
-std::ostream& NonPerishable::write(std::ostream& os, bool linear) const {
+std::ostream& NonPerishable::write(std::ostream& os, bool linear) const
+{
     if (this->ok())  // Formatting a linear form using  public member functions
         // that support the ostream objects.
     {
@@ -110,8 +118,9 @@ std::ostream& NonPerishable::write(std::ostream& os, bool linear) const {
 
             os.width(9);
             os.precision(2);
-            os << (this->quantity() * this->cost()) << "|";
-        } else {
+            os << (this->quantity()*this->cost()) << "|";
+        }
+        else {
             os << "Name:" << endl;
             os.setf(ios::left);
 
@@ -122,18 +131,18 @@ std::ostream& NonPerishable::write(std::ostream& os, bool linear) const {
             os << "Price: " << this->price() << endl;
 
             if (this->taxed())
-                os << "Price after tax: " << price() + price() * TAX << endl;
+                os << "Price after tax: " << price()+price()*TAX << endl;
             else
                 os << "Price after tax: N/A" << endl;
             os << "Quantity: " << this->quantity() << endl;
-            os << "Total Cost: " << fixed << (this->quantity() * this->cost())
+            os << "Total Cost: " << fixed << (this->quantity()*this->cost())
                << endl;
         }
     }
 
         // if the error occurs in the program, the error message is displayed.
     else {
-        os << (const char*)(this->m_err);
+        os << (const char*) (this->m_err);
     }
 
     return os;
@@ -177,12 +186,14 @@ std::fstream& NonPerishable::load(std::fstream& file)
 
 // Overload operator >> for read and operator << for write in the
 // NonPerishable.cpp.
-std::istream& operator>>(std::istream& is, NonPerishable& NPR) {
+std::istream& operator>>(std::istream& is, NonPerishable& NPR)
+{
     NPR.read(is);
     return is;
 }
 
-std::ostream& operator<<(std::ostream& os, const NonPerishable& NPW) {
+std::ostream& operator<<(std::ostream& os, const NonPerishable& NPW)
+{
     NPW.write(os, true);
     return os;
 }

@@ -61,15 +61,15 @@ void Date::set(int year, int mon, int day, int hour, int min)
 Date::Date()
 {
 
-    this->m_dateOnly = false;
-    this->set();
+    m_dateOnly = false;
+    set();
 
 }
 
 Date::Date(int year, int mon, int day)
 {
 
-    this->m_dateOnly = true;
+    m_dateOnly = true;
 
     m_year = year;
     m_mon = mon;
@@ -95,27 +95,27 @@ Date::Date(int year, int mon, int day, int hour, int min)
 
 bool Date::operator==(const Date& D) const
 {
-    return this->value()==D.value();
+    return value()==D.value();
 }
 bool Date::operator!=(const Date& D) const
 {
-    return this->value()!=D.value();
+    return value()!=D.value();
 }
 bool Date::operator<(const Date& D) const
 {
-    return this->value()<D.value();
+    return value()<D.value();
 }
 bool Date::operator>(const Date& D) const
 {
-    return this->value()>D.value();
+    return value()>D.value();
 }
 bool Date::operator<=(const Date& D) const
 {
-    return this->value()<=D.value();
+    return value()<=D.value();
 }
 bool Date::operator>=(const Date& D) const
 {
-    return this->value()>=D.value();
+    return value()>=D.value();
 }
 
 int Date::errCode() const
