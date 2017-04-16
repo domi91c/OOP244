@@ -5,8 +5,6 @@
 // Student Number 016-183-121
 // Email dcnunes@myseneca.ca
 
-
-
 #ifndef ICT_NONPERISHABLE_H__
 #define ICT_NONPERISHABLE_H__
 
@@ -33,7 +31,7 @@ public:
     // istream,ostream and fstream for read, write and file methods.
     virtual std::fstream& save(std::fstream& file) const;
     virtual std::fstream& load(std::fstream& file);
-    virtual std::ostream& write(std::ostream& os, bool liear) const;
+    virtual std::ostream& write(std::ostream& os, bool linear) const;
     virtual std::istream& read(std::istream& is);
 
 };

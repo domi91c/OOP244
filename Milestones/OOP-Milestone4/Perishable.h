@@ -6,11 +6,10 @@
 // Email dcnunes@myseneca.ca
 
 
-
 #ifndef ICT_PERISHABLE_H__
 #define ICT_PERISHABLE_H__
 #include <iostream>
-#include "Date.h"
+#include "Date.h"   // Required to access the private member "Date m_expiry;".
 #include "NonPerishable.h"
 
 namespace ict {
