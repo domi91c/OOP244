@@ -4,20 +4,15 @@
 // Author Dominic Nunes
 // Student Number 016-183-121 
 // Email dcnunes@myseneca.ca
-
-
-
 // compilation safegaurds
-#ifndef ICT_ERROR_H__
-#define ICT_ERROR_H__
+#ifndef ICT_Error_H_
+#define ICT_Error_H_
 
 #include <iostream>
 namespace ict {
 class Error {
-
-    char* m_message; // Encapsulates dynamic C-style string memory
+    char* m_message;
 public:
-
     // constructors
     Error();
     Error(const char* errorMessage);
@@ -26,8 +21,8 @@ public:
     virtual ~Error();
 
     // deleted constructor and operator=
-    Error& operator=(const Error& em) = delete;
     Error(const Error& em) = delete;
+    Error& operator=(const Error& em) = delete;
 
     // operator= for c-style strings
     void operator=(const char* errorMessage);
@@ -38,14 +33,13 @@ public:
     void message(const char* value);
 
     // cast overloads
-    operator bool() const;
     operator const char*() const;
+    operator bool() const;
 
+    friend std::ostream& operator<<(std::ostream&, const Error& error);
 };
 // operator << overload prototype for cout
-std::ostream& operator<<(std::ostream&, Error&);
+std::ostream& operator<<(std::ostream&, const Error& error);
 }
 
 #endif
-
-

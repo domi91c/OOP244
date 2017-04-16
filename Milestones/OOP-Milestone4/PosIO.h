@@ -10,13 +10,19 @@
 #include <fstream>
 #include <iostream>
 
-namespace ict {
-class PosIO {
+namespace ict
+{
+class PosIO
+{
 public:
-    virtual std::fstream& save(std::fstream& file) const { return file; }
-    virtual std::fstream& load(std::fstream& file) { return file; }
-    virtual std::ostream& write(std::ostream& os, bool linear) const { return os; }
-    virtual std::istream& read(std::istream& is) { return is; }
+    virtual std::fstream &save(std::fstream &file) const
+    { return file; }
+    virtual std::fstream &load(std::fstream &file)
+    { return file; }
+    virtual std::ostream &write(std::ostream &os, bool linear) const
+    { return os; }
+    virtual std::istream &read(std::istream &is)
+    { return is; }
 };
 
 }

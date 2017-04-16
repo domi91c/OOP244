@@ -4,20 +4,13 @@
 // Author Dominic Nunes
 // Student Number 016-183-121
 // Email dcnunes@myseneca.ca
-
-
 #define _CRT_SECURE_NO_WARNINGS
 
-#include <cstring>
 #include "Error.h"
+#include <cstring>
 
 namespace ict {
-
-// constructors
-Error::Error()
-{
-    m_message = nullptr;
-}
+Error::Error() { m_message = nullptr; }
 
 Error::Error(const char* errorMessage)
 {
@@ -25,71 +18,56 @@ Error::Error(const char* errorMessage)
     message(errorMessage);
 }
 
-// destructors
-Error::~Error()
-{
-    delete[] m_message;
-}
+Error::~Error() { delete[] m_message; }
 
-// operator= for c-style strings
 void Error::operator=(const char* errorMessage)
 {
-    int error2 = (int) strlen(errorMessage);
-    if (errorMessage) {
+    clear();
+    message(errorMessage);
+}
+
+void Error::clear()
+{
+    if (isClear()) {
+        delete m_message;
+    }
+
+    else {
         delete[] m_message;
-        m_message = new char[error2+1];
-        strcpy(m_message, errorMessage);
-        clear();
-        message(errorMessage);
+        m_message = nullptr;
     }
 }
 
-// methods
-void Error::clear()
+void Error::message(const char* value)
 {
-    delete[] m_message;
-    m_message = nullptr;
+    clear();
+    char* temporary = new char[strlen(value)+1];
+
+    strcpy(temporary, value);
+    m_message = temporary;
 }
 
 bool Error::isClear() const
 {
-    bool msg = false;
+    bool Msg = false;
+
     if (m_message==nullptr) {
-        msg = true;
+        Msg = true;
     }
-    return msg;
+    return Msg;
 }
 
-void Error::message(const char* msg)
+Error::operator const char*() const { return m_message; }
+
+Error::operator bool() const { return m_message==nullptr; }
+
+std::ostream& operator<<(std::ostream& os, const Error& error)
 {
-    int Emsg = (int) strlen(msg);
-    if (msg) {
-        clear();
-        m_message = new char[Emsg+1];
-        strcpy(m_message, msg);
+    if (!error.isClear()) {
+        os << error.m_message;
     }
+
+    return os;
+}
 }
 
-// cast overloads
-Error::operator bool() const
-{
-    bool msg = false;
-    if (isClear()) {
-        msg = true;
-    }
-    return msg;
-}
-
-Error::operator const char*() const
-{
-    return m_message;
-}
-
-std::ostream& operator<<(std::ostream& ostream, Error& errorMessage)
-{
-    if (!errorMessage.isClear()) {
-        ostream << (const char*) errorMessage;
-    }
-    return ostream;
-}
-}

@@ -14,7 +14,7 @@
 #include "PosIO.h"  // Required to access the pure virtual functions.
 
 namespace ict {
-class NonPerishable: public Item  // NonPerishable = Derived Class.  Item = Base Class.
+class NonPerishable : public Item  // NonPerishable = Derived Class.  Item = Base Class.
 {
 private:
 

@@ -8,15 +8,15 @@
 #ifndef ICT_PERISHABLE_H__
 #define ICT_PERISHABLE_H__
 #include <iostream>
-#include "Date.h"   // Required to access the private member "Date m_expiry;".
+#include "Date.h"
 #include "NonPerishable.h"
 
 namespace ict {
-class Perishable: public NonPerishable    // Perishable = Derived Class. NonPerishable = Base Class.
+class Perishable : public NonPerishable // Perishable inherits from NonPerisable
 {
 private:
 
-    Error m_err;      // This member is accessed by the NonPerisable.h which has the Error.h implemented.
+    Error m_err;      // This member is accessed by NonPerisable.h which has the Error.h implemented.
     Date m_expiry;
 
 protected:
@@ -26,7 +26,7 @@ public:
     // Constructor
     Perishable();
 
-    // Pure Virtual Prototypes
+    // Virtual Prototypes
     virtual std::fstream& save(std::fstream&) const;
     virtual std::ostream& write(std::ostream&, bool) const;
     virtual std::istream& read(std::istream&);

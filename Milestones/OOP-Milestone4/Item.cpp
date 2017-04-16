@@ -6,14 +6,17 @@
 // Email dcnunes@myseneca.ca
 
 #define _CRT_SECURE_NO_WARNINGS
+
 #include<iostream>
 #include<cstring>
 
 #include "POS.h"
 #include "PosIO.h"
 #include "Item.h"
+
 using namespace std;
-namespace ict {
+namespace ict
+{
 
 Item::Item()
 {
@@ -24,34 +27,34 @@ Item::Item()
     m_quantity = 0;
 }
 
-Item::Item(const char sku[], const char* name, double price, bool taxed)
+Item::Item(const char sku[], const char *name, double price, bool taxed)
 {
     strcpy(m_sku, sku);
-    m_name = new char[strlen(name)+1];
+    m_name = new char[strlen(name) + 1];
     strcpy(m_name, name);
     m_price = price;
     m_taxed = taxed;
     m_quantity = 0;
 }
 
-Item::Item(const Item& I)
+Item::Item(const Item &I)
 {
     m_name = nullptr;
     strcpy(m_sku, I.m_sku);
-    m_name = new char[strlen(I.m_name)+1];
+    m_name = new char[strlen(I.m_name) + 1];
     strcpy(m_name, I.m_name);
     m_price = I.m_price;
     m_taxed = I.m_taxed;
     m_quantity = I.m_quantity;
 }
 
-Item& Item::operator=(const Item& I2)
+Item &Item::operator=(const Item &I2)
 {
-    if (m_name!=nullptr && m_name[0]!='\0') {
+    if (m_name != nullptr && m_name[0] != '\0') {
         delete[] m_name;
     }
     strcpy(m_sku, I2.m_sku);
-    m_name = new char[strlen(I2.m_name)+1];
+    m_name = new char[strlen(I2.m_name) + 1];
     strcpy(m_name, I2.m_name);
     m_price = I2.m_price;
     m_taxed = I2.m_taxed;
@@ -64,7 +67,7 @@ Item::~Item()
     delete[] m_name;
 }
 
-void Item::sku(const char* d_sku)
+void Item::sku(const char *d_sku)
 {
     strcpy(m_sku, d_sku);
 }
@@ -74,13 +77,13 @@ void Item::price(double d_price)
     m_price = d_price;
 }
 
-void Item::name(const char* d_name)
+void Item::name(const char *d_name)
 {
-    if (m_name!=nullptr && m_name[0]!='\0') {
+    if (m_name != nullptr && m_name[0] != '\0') {
         delete[] m_name;
     }
 
-    m_name = new char[strlen(d_name)+1];
+    m_name = new char[strlen(d_name) + 1];
     strcpy(m_name, d_name);
 }
 
@@ -95,14 +98,15 @@ void Item::quantity(int d_quantity)
 }
 
 //	Query Functions
-const char* Item::sku() const
+const char *Item::sku() const
 {
     return m_sku;
 }
 
-double Item::price() const { return m_price; }
+double Item::price() const
+{ return m_price; }
 
-char* Item::name() const
+char *Item::name() const
 {
     return m_name;
 }
@@ -120,7 +124,7 @@ int Item::quantity() const
 double Item::cost() const
 {
     if (m_taxed) {
-        return (m_price*TAX)+m_price;
+        return (m_price * TAX) + m_price;
     }
     else {
         return m_price;
@@ -134,37 +138,43 @@ bool Item::isEmpty()
 }
 
 // Assignment Operators
-bool Item::operator==(const char* d_sku)
+bool Item::operator==(const char *d_sku)
 {
-    return (strcmp(d_sku, m_sku)==0);
+    return (strcmp(d_sku, m_sku) == 0);
 }
 
 int Item::operator-=(int quantity)
 {
-    return Item::quantity()-quantity;
+    return Item::quantity() - quantity;
 }
 
 int Item::operator+=(int quantity)
 {
-    return Item::quantity()+quantity;
+    return Item::quantity() + quantity;
 }
 
-double operator+=(double& d, const Item& I)
+double operator+=(double &d, const Item &I)
 {
-    return d+(I.price()*I.quantity());
+    return d + (I.price() * I.quantity());
 }
 
-std::ostream& Item::write(std::ostream& os, bool linear) const
+std::ostream &Item::write(std::ostream &os, bool linear) const
 {
     return os;
 }
 
-std::istream& operator>>(std::istream& is, Item& r)
+std::istream &Item::read(std::istream &os) const
+{
+    return os;
+}
+
+std::istream &operator>>(std::istream &is, Item &r)
 {
     r.read(is);
     return is;
 }
-std::ostream& operator<<(std::ostream& os, const Item& w)
+
+std::ostream &operator<<(std::ostream &os, const Item &w)
 {
     w.write(os, true);
     return os;
