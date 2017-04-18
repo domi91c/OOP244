@@ -5,6 +5,7 @@
 // Student Number 016-183-121 
 // Email dcnunes@myseneca.ca
 // compilation safegaurds
+
 #ifndef ICT_Error_H_
 #define ICT_Error_H_
 

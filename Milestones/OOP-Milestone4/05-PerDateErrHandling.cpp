@@ -9,25 +9,24 @@
 // Name               Date                 Reason
 // Fardad             2017-03-23           Preliminary release    
 /////////////////////////////////////////////////////////////////
-
 #include "Perishable.h"
 using namespace ict;
 using namespace std;
 #define FileName "perish.txt"
-void piv(const char* upc, const char* name, const char* price = "",
-        const char* taxed = "", const char* qty = "", const char* date = "")
+void piv(const char *upc, const char *name, const char *price = "",
+         const char *taxed = "", const char *qty = "", const char *date = "")
 {
     cout
-            << "Enter the following: " << endl
-            << "Sku: " << upc << endl
-            << "Name:" << endl << name << endl;
+        << "Enter the following: " << endl
+        << "Sku: " << upc << endl
+        << "Name:" << endl << name << endl;
     if (price[0]) cout << "Price: " << price << endl;
     if (taxed[0]) cout << "Taxed: " << taxed << endl;
     if (qty[0]) cout << "Quantity: " << qty << endl;
     if (date[0]) cout << "Expiry date: " << date << endl;
     cout << endl;
 }
-void dumpFile(const char* fname)
+void dumpFile(const char *fname)
 {
     ifstream f(fname);
     char ch;

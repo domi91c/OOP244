@@ -23,6 +23,6 @@ set(SOURCE_FILES
         NonPerishable.cpp
         NonPerishable.h
         Perishable.cpp
-        Perishable.h)
+        Perishable.h PosApp.cpp PosApp.h)
 
 add_executable(OOP_Milestone4 ${SOURCE_FILES})
