@@ -1,0 +1,10 @@
+
+In line number 3 of your output:
+The output should be:
+The Sene-Store
+But your output is: 
+The Sene-Store
+              ^
+--------------|
+Professor's character ASCII code: hex(0), dec(0)
+un-matched character ASCII code: hex(d), dec(13)

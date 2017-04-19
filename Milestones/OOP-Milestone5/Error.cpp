@@ -6,6 +6,7 @@
 // Email dcnunes@myseneca.ca
 
 #include "Error.h"
+#include <cstring>
 using namespace std;
 namespace ict {
 
