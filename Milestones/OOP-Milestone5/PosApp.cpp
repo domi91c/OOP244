@@ -96,7 +96,7 @@ int PosApp::menu()
 void PosApp::deallocateItems()
 {
     for (int i = 0; i<m_noOfItems; i++) {
-        delete[] m_items[i];
+        delete m_items[i];
     }
 }
 
@@ -131,7 +131,7 @@ void PosApp::loadRecs()
     f.close();
 }
 
-// overwrites the data in the data file
+// writes the data in the data file
 void PosApp::saveRecs()
 {
     fstream file(m_filename, ios::out);
@@ -173,7 +173,7 @@ void PosApp::updateQty()
         m_items[index-1]->write(cout, false);
         cout << endl << "Please enter the number of purchased items: ";
         cin >> quant;
-        *(m_items[index-1]) += quant;
+        m_items[index-1] += quant;
         saveRecs();
         cout << "Updated!" << endl << endl;
     }
@@ -192,10 +192,12 @@ void PosApp::addItem(bool perishable)
         m_items[m_noOfItems] = new NonPerishable();
     }
     m_items[m_noOfItems]->read(cin);
-    if (!cin.fail()) {
-        m_noOfItems++;
+    if (cin.fail()) {
     }
-    cout << "Item Added.\n" << endl;
+    else {
+        m_noOfItems++;
+        cout << "Item added.\n" << endl;
+    }
 }
 
 // print inventory

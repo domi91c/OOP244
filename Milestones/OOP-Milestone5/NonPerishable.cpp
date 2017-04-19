@@ -47,7 +47,8 @@ istream& NonPerishable::read(istream& is)
         is >> _taxed;
 
         if (!(_taxed=='y' || _taxed=='Y' || _taxed=='n' || _taxed=='N')) {
-            m_err.message("Invalid Taxed Entry, (y)es or (n)o");
+            error("Invalid Taxed Entry, (y)es or (n)o");
+            cout << m_err;
             is.setstate(ios::failbit);
         }
         else {
@@ -60,17 +61,20 @@ istream& NonPerishable::read(istream& is)
             cout << "Quantity: ";
             is >> _quantity;
 
-            if (is.fail()) {
-                m_err.message("Invalid Quantity Entry");
-                is.setstate(ios::failbit);
+            if (!is.fail()) {
+                quantity(_quantity);
             }
             else {
-                quantity(_quantity);
+                error("Invalid Quantity Entry");
+                cout << m_err;
+                is.clear();
+                is.setstate(ios::failbit);
             }
         }
     }
     else {
-        m_err.message("Invalid Price Entry");
+        error("Invalid Price Entry");
+        cout << m_err;
         is.setstate(ios::failbit); // The read returns the is.
     }
     return is;

@@ -68,11 +68,11 @@ Error::operator const char*() const
 }
 
 // << operator overload
-ostream& operator<<(ostream& os, Error& errorMessage)
+ostream& operator<<(ostream& os, const Error& error)
 {
-    if (!errorMessage.isClear()) {
-        os << (const char*) errorMessage;
+    if (!error.isClear()) {
+        os << (const char*) error;
     }
-    return os;
+    return os << endl << endl;
 }
 }

@@ -24,8 +24,9 @@ public:
     // 1 arg constructor
     Error(const char* errorMessage);
     // destructor
+//    ~Error();
     virtual ~Error();
-    // deleted constructor and operator=
+    // deleted constructor and copy constructor
     Error& operator=(const Error& em) = delete;
     Error(const Error& em) = delete;
     // = operator
@@ -39,11 +40,11 @@ public:
     // casting overloads
     operator bool() const;
     operator const char*() const;
+// << operator overload
 
 };
 
-// << operator overload
-ostream& operator<<(ostream& os, const Error& errorMessage);
+ostream& operator<<(ostream& os, const Error& error);
 }
 
 #endif

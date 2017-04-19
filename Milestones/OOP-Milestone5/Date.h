@@ -2,7 +2,7 @@
 // File Date.h
 // Date 2017-04-17
 // Author Dominic Nunes
-// Student Number 016-183-121 
+// Student Number 016-183-121
 // Email dcnunes@myseneca.ca
 
 #ifndef ICT_DATE_H__
