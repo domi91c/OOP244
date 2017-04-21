@@ -170,10 +170,11 @@ void PosApp::updateQty()
     cin >> sku;
     int index = searchItems(sku);
     if (index!=-1) {
-        m_items[index-1]->write(cout, false);
+        Item* item = m_items[index-1];
+        item->write(cout, false);
         cout << endl << "Please enter the number of purchased items: ";
         cin >> quant;
-        m_items[index-1] += quant;
+        item->quantity(item->quantity()+quant);
         saveRecs();
         cout << "Updated!" << endl << endl;
     }
