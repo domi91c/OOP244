@@ -107,6 +107,7 @@ void PosApp::deallocateItems()
     for (int i = 0; i<m_noOfItems; i++) {
         delete m_items[i];
     }
+    m_noOfItems = 0;
 }
 
 // load all items
@@ -148,13 +149,17 @@ void PosApp::saveRecs()
         for (int i = 0; i<m_noOfItems; i++) {
             // only if their quantity is more than zero
             if (m_items[i]->quantity()>0) {
+                cout << "saving file" << endl;
                 m_items[i]->save(file);
+                cout << "saved file" << endl;
                 file << '\n';
             }
         }
         file.close();
     }
+    cout << "load file" << endl;
     loadRecs();
+    cout << "loaded file" << endl;
 }
 
 // find item by sku
@@ -183,7 +188,7 @@ void PosApp::updateQty()
         item->write(cout, false);
         cout << endl << "Please enter the number of purchased items: ";
         cin >> quant;
-        item->quantity(item->quantity()+quant);
+        item->quantity(item->quantity()-quant);
         saveRecs();
         cout << "Updated!" << endl << endl;
     }

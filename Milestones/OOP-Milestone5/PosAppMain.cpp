@@ -2,6 +2,6 @@
 int main()
 {
     ict::PosApp app("posapp.txt", "bill.txt");
-    app.testRun();
+    app.run();
     return 0;
 }

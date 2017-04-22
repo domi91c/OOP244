@@ -59,8 +59,8 @@ Item::Item(const Item& item)
 // assignment operator
 Item& Item::operator=(const Item& item)
 {
-    if (!Item::isEmpty()) {
-        Item::name(item.m_name);
+    if (!isEmpty()) {
+        name(item.m_name);
         m_quantity = item.m_quantity;
     }
     return *this;
@@ -83,9 +83,9 @@ void Item::price(double p)
 }
 void Item::name(const char* n)
 {
-    if (m_name!=nullptr && m_name[0]!='\0') {
-        delete[] m_name;
-    }
+//    if (m_name!=nullptr && m_name[0]!='\0') {
+//        delete[] m_name;
+//    }
     m_name = new char[strlen(n)+1];
     strcpy(m_name, n);
 }
@@ -127,21 +127,21 @@ double Item::cost() const
 // safe and empty check
 bool Item::isEmpty()
 {
-    return ((m_sku[0]=='\0') && (m_name==nullptr) && (m_price==0) && (m_taxed==0) && (m_quantity==0));
+    return m_sku[0]=='\0' && m_name==nullptr && m_price==0 && m_taxed==0 && m_quantity==0;
 }
 
 // assignment operator overloads
-bool Item::operator==(const char* d_sku)
+bool Item::operator==(const char* _sku)
 {
-    return (strcmp(d_sku, m_sku)==0);
+    return strcmp(_sku, m_sku)==0;
 }
-int Item::operator-=(int quantity)
+int Item::operator-=(int _quantity)
 {
-    return Item::quantity()-quantity;
+    return quantity()-_quantity;
 }
-int Item::operator+=(int quantity)
+int Item::operator+=(int _quantity)
 {
-    return Item::quantity()+quantity;
+    return quantity()+_quantity;
 }
 
 // += operator (number, Item)

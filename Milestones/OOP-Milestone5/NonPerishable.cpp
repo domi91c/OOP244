@@ -67,8 +67,8 @@ istream& NonPerishable::read(istream& is)
             else {
                 error("Invalid Quantity Entry");
                 cout << m_err;
-                is.clear();
                 is.setstate(ios::failbit);
+                is.clear();
             }
         }
     }
@@ -84,6 +84,7 @@ ostream& NonPerishable::write(ostream& os, bool linear) const
 {
     if (ok()) {
         if (linear) {
+
             os.width(MAX_SKU_LEN);
             os << left << sku() << "|";
             os.width(20);
