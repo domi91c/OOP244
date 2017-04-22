@@ -40,6 +40,7 @@ class PosApp {
 public:
     // load records and display the menu
     void run();
+    void testRun();
     // constructor
     PosApp(const char* filename, const char* billfname);
     // deleted single arg constructor

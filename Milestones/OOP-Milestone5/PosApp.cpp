@@ -25,6 +25,15 @@ PosApp::~PosApp()
     deallocateItems();
 }
 
+void PosApp::testRun()
+{
+    cout << "loading recs" << endl;
+    loadRecs();
+    cout << "listing items" << endl;
+    listItems();
+    updateQty();
+}
+
 // load records and display the menu
 void PosApp::run()
 {

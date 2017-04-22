@@ -46,7 +46,11 @@ void Error::clear()
 // check if m_message is clear
 bool Error::isClear() const
 {
-    return m_message==nullptr;
+    bool ret = false;
+    if (m_message==nullptr) {
+        return true;
+    }
+    return ret;
 }
 
 // set m_message

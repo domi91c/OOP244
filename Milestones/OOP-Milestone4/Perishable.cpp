@@ -15,8 +15,7 @@ namespace ict {
 // Constructor
 Perishable::Perishable()
 {
-    m_expiry.dateOnly(
-            true);  // Returns the m_expiry.dateOnly true in the dateonly mode.
+    m_expiry.dateOnly(true);  // Returns the m_expiry.dateOnly true in the dateonly mode.
 }
 
 char Perishable::signature() const
@@ -36,8 +35,7 @@ std::fstream& Perishable::save(std::fstream& file) const
 
 std::fstream& Perishable::load(std::fstream& file)
 {
-    NonPerishable::load(
-            file);  // Calls the NonPerisable::load and returns the file.
+    NonPerishable::load(file);  // Calls the NonPerisable::load and returns the file.
     return file;
 }
 
