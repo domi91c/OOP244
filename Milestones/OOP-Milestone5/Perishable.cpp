@@ -5,7 +5,6 @@
 // Student Number 016-183-121
 // Email dcnunes@myseneca.ca
 
-// lib includes
 #include <iostream>
 #include "Perishable.h"
 
@@ -73,7 +72,8 @@ istream& Perishable::read(istream& is)
             is.setstate(ios::failbit);
             break;
         }
-        default:break;
+        default:
+            break;
         }
         if (NO_ERROR!=m_expiry.errCode()) {
             cout << m_err;

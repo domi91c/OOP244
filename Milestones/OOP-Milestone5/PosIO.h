@@ -14,12 +14,13 @@
 // abstract class for IO functions
 using namespace std;
 namespace ict {
+
 class PosIO {
 public:
-    virtual fstream& save(fstream& file) const { return file; }
-    virtual fstream& load(fstream& file) { return file; }
-    virtual ostream& write(ostream& os, bool linear) const { return os; }
-    virtual istream& read(istream& is) { return is; }
+    virtual fstream& save(fstream& file) const = 0;
+    virtual fstream& load(fstream& file) = 0;
+    virtual ostream& write(ostream& os, bool linear) const = 0;
+    virtual istream& read(istream& is) = 0;
 };
 
 }

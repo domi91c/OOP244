@@ -5,7 +5,6 @@
 // Student Number 016-183-121
 // Email dcnunes@myseneca.ca
 
-
 #ifndef ICT_POSAPP_H__
 #define ICT_POSAPP_H__
 

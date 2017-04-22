@@ -5,8 +5,6 @@
 // Student Number 016-183-121
 // Email dcnunes@myseneca.ca
 
-
-/* lib includes*/
 #include "NonPerishable.h"
 
 using namespace std;

@@ -43,13 +43,17 @@ void PosApp::run()
         select = menu();
         if (select>0) {
             switch (select) {
-            case 1: listItems();
+            case 1:
+                listItems();
                 break;
-            case 2: addItem(true);
+            case 2:
+                addItem(true);
                 break;
-            case 3: addItem(false);
+            case 3:
+                addItem(false);
                 break;
-            case 4: updateQty();
+            case 4:
+                updateQty();
                 break;
             case 5: {
                 cout << endl << "Please enter the SKU: ";
@@ -67,9 +71,11 @@ void PosApp::run()
                 cout << endl;
                 break;
             }
-            case 6: POS();
+            case 6:
+                POS();
                 break;
-            default:break;
+            default:
+                break;
             }
         }
         if (select==0)
@@ -147,19 +153,15 @@ void PosApp::saveRecs()
     fstream file(m_filename, ios::out);
     if (file.is_open()) {
         for (int i = 0; i<m_noOfItems; i++) {
-            // only if their quantity is more than zero
+            // save if quantity is greater than zero
             if (m_items[i]->quantity()>0) {
-                cout << "saving file" << endl;
                 m_items[i]->save(file);
-                cout << "saved file" << endl;
                 file << '\n';
             }
         }
         file.close();
     }
-    cout << "load file" << endl;
     loadRecs();
-    cout << "loaded file" << endl;
 }
 
 // find item by sku
@@ -188,7 +190,7 @@ void PosApp::updateQty()
         item->write(cout, false);
         cout << endl << "Please enter the number of purchased items: ";
         cin >> quant;
-        item->quantity(item->quantity()-quant);
+        item->quantity(item->quantity()+quant);
         saveRecs();
         cout << "Updated!" << endl << endl;
     }
@@ -207,9 +209,7 @@ void PosApp::addItem(bool perishable)
         m_items[m_noOfItems] = new NonPerishable();
     }
     m_items[m_noOfItems]->read(cin);
-    if (cin.fail()) {
-    }
-    else {
+    if (!cin.fail()) {
         m_noOfItems++;
         cout << "Item added.\n" << endl;
     }
@@ -238,6 +238,7 @@ void PosApp::listItems() const
     cout << "-----------------------------------------------^--------------^" << endl << endl;
 }
 
+// removes all data from the m_billfname file
 void PosApp::truncateBillFile()
 {
     fstream f;
