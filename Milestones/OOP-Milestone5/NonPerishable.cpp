@@ -16,7 +16,6 @@ void NonPerishable::error(const char* _message) { m_err = _message; }
 // read item
 istream& NonPerishable::read(istream& is)
 {
-    is.clear();
     m_err.clear();
     char _sku[MAX_SKU_LEN];
     char _name[256];
@@ -27,56 +26,117 @@ istream& NonPerishable::read(istream& is)
 
     if (_signature=='N')
         cout << endl << "Item Entry:" << endl;
+
     cout << "Sku: ";
     is >> _sku;
-
-    if (!is.fail()) {
-        sku(_sku);
-    }
-
+    sku(_sku);
     cout << "Name:" << endl;
     is >> _name;
     name(_name);
-    cout << "Price: ";
-    is >> _price;
-    if (!is.fail()) {
-        price(_price);
-        cout << "Taxed: ";
-        is >> _taxed;
 
-        if (!(_taxed=='y' || _taxed=='Y' || _taxed=='n' || _taxed=='N')) {
-            error("Invalid Taxed Entry, (y)es or (n)o");
-            cout << m_err;
-            is.setstate(ios::failbit);
+    while (is.good()) {
+        cout << "Price: ";
+        if (is >> _price) {
+            price(_price);
         }
         else {
+            error("Invalid Price Entry");
+            cout << m_err;
+            is.clear();
+            is.ignore(numeric_limits<streamsize>::max(), '\n');
+            is.setstate(ios::failbit);
+            break;
+        }
+
+        cout << "Taxed: ";
+        if (is >> _taxed) {
             if (_taxed=='y' || _taxed=='Y') {
                 taxed(true);
             }
             else if (_taxed=='n' || _taxed=='N') {
                 taxed(false);
             }
-            cout << "Quantity: ";
-            is >> _quantity;
-
-            if (!is.fail()) {
-                quantity(_quantity);
-            }
             else {
-                error("Invalid Quantity Entry");
+                error("Invalid Taxed Entry, (y)es or (n)o");
                 cout << m_err;
+                is.ignore(numeric_limits<streamsize>::max(), '\n');
                 is.setstate(ios::failbit);
-                is.clear();
+                break;
             }
         }
-    }
-    else {
-        error("Invalid Price Entry");
-        cout << m_err;
-        is.setstate(ios::failbit); // The read returns the is.
+        else {
+            error("Invalid Taxed Entry, (y)es or (n)o");
+            cout << m_err;
+            is.ignore(numeric_limits<streamsize>::max(), '\n');
+            is.setstate(ios::failbit);
+            break;
+        }
+        cout << "Quantity: ";
+        if (is >> _quantity) {
+            quantity(_quantity);
+        }
+        else {
+            error("Invalid Quantity Entry");
+            cout << m_err;
+            is.ignore(numeric_limits<streamsize>::max(), '\n');
+            is.setstate(ios::failbit);
+        }
+        break;
     }
     return is;
 }
+/*
+    if (_signature=='N')
+        cout << endl << "Item Entry:" << endl;
+    cout << "Sku: ";
+    is >>_sku ;
+        sku(_sku);
+
+    cout << "Name:" << endl;
+    is >> _name;
+    name(_name);
+    cout << "Price: ";
+    if (is >> _price) {
+        price(_price);
+        is.clear();
+    }
+    else {
+        error("Invalid Price Entry");
+        is.clear();
+        is.ignore(numeric_limits<streamsize>::max(), '\n');
+        is.setstate(ios::failbit);
+        cout << m_err;
+        return is;
+    }
+
+    cout << "Taxed: ";
+    if (is >> _taxed) {
+        if (_taxed!='y' && _taxed!='Y' && _taxed!='n' && _taxed!='N') {
+            error("Invalid Taxed Entry, (y)es or (n)o");
+            cout << m_err;
+            is.setstate(ios::failbit);
+            is.clear();
+            return is;
+        }
+        else if (_taxed=='y' || _taxed=='Y') {
+            taxed(true);
+        }
+        else if (_taxed=='n' || _taxed=='N') {
+            taxed(false);
+        }
+        is.clear();
+        cout << "Quantity: ";
+        if (is >> _quantity) {
+            quantity(_quantity);
+        }
+        else {
+            error("Invalid Quantity Entry");
+            cout << m_err;
+            is.clear();
+            is.ignore(numeric_limits<streamsize>::max(), '\n');
+            is.setstate(ios::failbit);
+        }
+    }*/
 
 ostream& NonPerishable::write(ostream& os, bool linear) const
 {
@@ -156,7 +216,6 @@ fstream& NonPerishable::load(fstream& file)
     quantity(_quantity);
     return file;
 }
-
 // overloaded stdin and stdout operators for read and write
 istream& operator>>(istream& is, NonPerishable& nonPerishable)
 {
@@ -168,6 +227,6 @@ ostream& operator<<(ostream& os, const NonPerishable& nonPerishable)
     nonPerishable.write(os, true);
     return os;
 }
+
+
 }
-
-

@@ -80,7 +80,7 @@ void PosApp::run()
         }
         if (select==0)
             cout << endl << "Goodbye!" << endl << endl;
-        else if (select==-1 || select>5)
+        else if (select==-1)
             cout << endl << "===Invalid Selection, try again===" << endl << endl;
     }
     while (select!=0);
@@ -249,11 +249,22 @@ void PosApp::truncateBillFile()
 // display contents of bill file and truncates
 void PosApp::showBill()
 {
+/*
+    v--------------------------------------------------------v
+    | 2017/04/02, 12:42                                      |
+    | SKU    | Item Name          | Price |TX |Qty |   Total |
+    |--------|--------------------|-------|---|----|---------|
+    | 1212   |Salted Butter
+    | 1313   |Paper Tissue
+    | 5656   |Honey
+    ^--------^--------------------^-------^---^----^---------^ |
+                                                Total:$ | 22.05|
+    ^-----------------------------------------^--------------^*/
     double asset = 0;
-    cout << "v-------------------------------------------------------------v" << endl;
-    cout << "| " << "2017/04/02, 12:42" << "                                           |" << endl;
-    cout << "Row  | SKU    | Item Name          | Price |TX |Qty |   Total |" << endl;
-    cout << "-----|--------|--------------------|-------|---|----|---------|" << endl;
+    cout << "v--------------------------------------------------------v" << endl;
+    cout << "| " << "2017/04/02, 12:42" << "                                     |" << endl;
+    cout << "| SKU    | Item Name          | Price |TX |Qty |   Total |" << endl;
+    cout << "^--------^--------------------^-------^---^----^---------^" << endl;
 
     fstream f;
     f.open(m_billfname, fstream::in);
