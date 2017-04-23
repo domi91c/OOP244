@@ -191,6 +191,7 @@ void PosApp::updateQty()
         cout << endl << "Please enter the number of purchased items: ";
         cin >> quant;
         item->quantity(item->quantity()+quant);
+//        item += quant;
         saveRecs();
         cout << "Updated!" << endl << endl;
     }
@@ -314,11 +315,12 @@ void PosApp::showBill()
 void PosApp::addToBill(Item& item)
 {
     fstream wrfile(m_billfname, ios::out | ios::app);
-    // if failure
     if (wrfile.is_open()) {
-        wrfile << "P," << item.sku() << "," << item.name() << "," << item.price() << "," << item.taxed() << "," << item.quantity()
+        wrfile << "P," << item.sku() << "," << item.name() << "," << item.price() << "," << item.taxed() << "," << 1
                << '\n';
     }
+
+    item.quantity(item.quantity()-1);
     wrfile.close();
 }
 

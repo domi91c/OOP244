@@ -42,12 +42,10 @@ istream& NonPerishable::read(istream& is)
         else {
             error("Invalid Price Entry");
             cout << m_err;
-            is.clear();
             is.ignore(10000);
             is.setstate(ios::failbit);
             break;
         }
-
         cout << "Taxed: ";
         if (is >> _taxed) {
             if (_taxed=='y' || _taxed=='Y') {
@@ -84,60 +82,8 @@ istream& NonPerishable::read(istream& is)
         break;
     }
     return is;
+
 }
-/*
-    if (_signature=='N')
-        cout << endl << "Item Entry:" << endl;
-    cout << "Sku: ";
-    is >>_sku ;
-        sku(_sku);
-
-    cout << "Name:" << endl;
-    is >> _name;
-    name(_name);
-    cout << "Price: ";
-    if (is >> _price) {
-        price(_price);
-        is.clear();
-    }
-    else {
-        error("Invalid Price Entry");
-        is.clear();
-        is.ignore(numeric_limits<streamsize>::max(), '\n');
-        is.setstate(ios::failbit);
-        cout << m_err;
-        return is;
-    }
-
-    cout << "Taxed: ";
-    if (is >> _taxed) {
-        if (_taxed!='y' && _taxed!='Y' && _taxed!='n' && _taxed!='N') {
-            error("Invalid Taxed Entry, (y)es or (n)o");
-            cout << m_err;
-            is.setstate(ios::failbit);
-            is.clear();
-            return is;
-        }
-        else if (_taxed=='y' || _taxed=='Y') {
-            taxed(true);
-        }
-        else if (_taxed=='n' || _taxed=='N') {
-            taxed(false);
-        }
-        is.clear();
-        cout << "Quantity: ";
-        if (is >> _quantity) {
-            quantity(_quantity);
-        }
-        else {
-            error("Invalid Quantity Entry");
-            cout << m_err;
-            is.clear();
-            is.ignore(numeric_limits<streamsize>::max(), '\n');
-            is.setstate(ios::failbit);
-        }
-    }*/
-
 ostream& NonPerishable::write(ostream& os, bool linear) const
 {
     if (ok()) {
@@ -227,6 +173,5 @@ ostream& operator<<(ostream& os, const NonPerishable& nonPerishable)
     nonPerishable.write(os, true);
     return os;
 }
-
 
 }
