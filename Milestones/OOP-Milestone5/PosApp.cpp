@@ -262,9 +262,9 @@ void PosApp::showBill()
     ^-----------------------------------------^--------------^*/
     double asset = 0;
     cout << "v--------------------------------------------------------v" << endl;
-    cout << "| " << "2017/04/02, 12:42" << "                                     |" << endl;
+    cout << "| " << Date() << "                                       |" << endl;
     cout << "| SKU    | Item Name          | Price |TX |Qty |   Total |" << endl;
-    cout << "^--------^--------------------^-------^---^----^---------^" << endl;
+    cout << "|--------|--------------------|-------|---|----|---------|" << endl;
 
     fstream f;
     f.open(m_billfname, fstream::in);
@@ -277,7 +277,7 @@ void PosApp::showBill()
             item = new Perishable();
             f >> tag;
             item->load(f);
-            cout << setw(5) << right << j++ << "| ";
+            cout << "| ";
             item->write(cout, true);
             cout << endl;
             if (!item->taxed()) {
@@ -304,10 +304,10 @@ void PosApp::showBill()
             delete item;
         }
     }
-    cout << "-----^--------^--------------------^-------^---^----^---------^" << endl;
-    cout << "                                Total Asset: $ |" << setw(14) << right << setprecision(2) << fixed << asset
+    cout << "^--------^--------------------^-------^---^----^---------^" << endl;
+    cout << "|                                Total: $ |" << setw(14) << right << setprecision(2) << fixed << asset
          << "|" << endl;
-    cout << "-----------------------------------------------^--------------^" << endl << endl;
+    cout << "^-----------------------------------------^--------------^" << endl << endl;
 }
 
 // add an item to the bill file

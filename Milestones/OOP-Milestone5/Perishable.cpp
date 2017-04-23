@@ -46,29 +46,34 @@ istream& Perishable::read(istream& is)
     if (ok()) {
         m_expiry.dateOnly(true);
         cout << "Expiry date (YYYY/MM/DD): ";
+
         m_expiry.read(is);
         switch (m_expiry.errCode()) {
         case CIN_FAILED: {
             error("Invalid Date Entry");
-            cout << m_err;
+            cout << "Invalid Date Entry";
+//            cout << m_err;
             is.setstate(ios::failbit);
             break;
         }
         case YEAR_ERROR: {
             error("Invalid Year in Date Entry");
-            cout << m_err;
+            cout << "Invalid Year in Date Entry";
+//            cout << m_err;
             is.setstate(ios::failbit);
             break;
         }
         case MON_ERROR: {
             error("Invalid Month in Date Entry");
-            cout << m_err;
+            cout << "Invalid Month in Date Entry";
+//            cout << m_err;
             is.setstate(ios::failbit);
             break;
         }
         case DAY_ERROR: {
             error("Invalid Day in Date Entry");
-            cout << m_err;
+            cout << "Invalid Day in Date Entry";
+//            cout << m_err;
             is.setstate(ios::failbit);
             break;
         }

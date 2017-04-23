@@ -132,11 +132,7 @@ int Date::errCode() const
 // check error status
 bool Date::bad() const
 {
-    bool err = false;
-    if (m_readErrorCode!=NO_ERROR) {
-        err = true;
-    }
-    return err;
+    return m_readErrorCode!=NO_ERROR;
 }
 
 // get m_dateOnly
