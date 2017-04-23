@@ -43,7 +43,7 @@ istream& NonPerishable::read(istream& is)
             error("Invalid Price Entry");
             cout << m_err;
             is.clear();
-            is.ignore(numeric_limits<streamsize>::max(), '\n');
+            is.ignore(10000);
             is.setstate(ios::failbit);
             break;
         }
@@ -59,7 +59,7 @@ istream& NonPerishable::read(istream& is)
             else {
                 error("Invalid Taxed Entry, (y)es or (n)o");
                 cout << m_err;
-                is.ignore(numeric_limits<streamsize>::max(), '\n');
+                is.ignore(10000);
                 is.setstate(ios::failbit);
                 break;
             }
@@ -67,7 +67,7 @@ istream& NonPerishable::read(istream& is)
         else {
             error("Invalid Taxed Entry, (y)es or (n)o");
             cout << m_err;
-            is.ignore(numeric_limits<streamsize>::max(), '\n');
+            is.ignore(10000);
             is.setstate(ios::failbit);
             break;
         }
@@ -78,7 +78,7 @@ istream& NonPerishable::read(istream& is)
         else {
             error("Invalid Quantity Entry");
             cout << m_err;
-            is.ignore(numeric_limits<streamsize>::max(), '\n');
+            is.ignore(10000);
             is.setstate(ios::failbit);
         }
         break;
