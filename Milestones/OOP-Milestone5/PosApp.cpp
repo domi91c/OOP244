@@ -311,12 +311,12 @@ void PosApp::showBill()
 }
 
 // add an item to the bill file
-void PosApp::addToBill(Item& I)
+void PosApp::addToBill(Item& item)
 {
     fstream wrfile(m_billfname, ios::out | ios::app);
     // if failure
     if (wrfile.is_open()) {
-        wrfile << "P," << I.sku() << "," << I.name() << "," << I.price() << "," << I.taxed() << "," << I.quantity()
+        wrfile << "P," << item.sku() << "," << item.name() << "," << item.price() << "," << item.taxed() << "," << item.quantity()
                << '\n';
     }
     wrfile.close();
@@ -332,12 +332,12 @@ void PosApp::POS()
         //cin >> sku;
         cin.ignore();
         cin.get(sku, MAX_SKU_LEN+1);
-        int idx = searchItems(sku);
-        if (idx>0) {
+        int index = searchItems(sku);
+        if (index>0) {
             cout << "v------------------->" << endl;
-            cout << "| " << m_items[idx-1]->name() << endl;
+            cout << "| " << m_items[index-1]->name() << endl;
             cout << "^------------------->" << endl;
-            addToBill(*(m_items[idx-1]));
+            addToBill(*(m_items[index-1]));
         }
             // when a input value exists, print a message
         else if (strlen(sku)>0) {

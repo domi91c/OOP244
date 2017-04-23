@@ -34,7 +34,7 @@ class PosApp {
     void listItems() const;
     void truncateBillFile();
     void showBill();
-    void addToBill(Item& I);
+    void addToBill(Item& item);
     void POS();
 public:
     // load records and display the menu
