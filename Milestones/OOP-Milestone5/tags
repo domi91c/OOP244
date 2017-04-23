@@ -1,0 +1,653 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CIN_FAILED	Date.h	16;"	d
+DAY_ERROR	Date.h	19;"	d
+Date	Date.cpp	/^Date::Date()$/;"	f	class:ict::Date
+Date	Date.cpp	/^Date::Date(int year, int mon, int day)$/;"	f	class:ict::Date
+Date	Date.cpp	/^Date::Date(int year, int mon, int day, int hour, int min)$/;"	f	class:ict::Date
+Date	Date.h	/^    Date();$/;"	p	class:ict::Date
+Date	Date.h	/^    Date(int year, int mon, int day);$/;"	p	class:ict::Date
+Date	Date.h	/^    Date(int year, int mon, int day, int hour, int min = 0);$/;"	p	class:ict::Date
+Date	Date.h	/^class Date {$/;"	c	namespace:ict
+Error	Error.cpp	/^Error::Error()$/;"	f	class:ict::Error
+Error	Error.cpp	/^Error::Error(const char* errorMessage)$/;"	f	class:ict::Error
+Error	Error.h	/^    Error();$/;"	p	class:ict::Error
+Error	Error.h	/^    Error(const char* errorMessage);$/;"	p	class:ict::Error
+Error	Error.h	/^class Error {$/;"	c	namespace:ict
+FileName	01-NPErrHandling.cpp	15;"	d	file:
+FileName	02-NPDisplayTest.cpp	15;"	d	file:
+FileName	03-NPSaveLoad.cpp	15;"	d	file:
+FileName	04-PerErrHandling.cpp	15;"	d	file:
+FileName	05-PerDateErrHandling.cpp	15;"	d	file:
+FileName	06-PerDisplayTest.cpp	15;"	d	file:
+FileName	07-PerSaveLoad.cpp	15;"	d	file:
+HOUR_ERROR	Date.h	20;"	d
+ICT_DATE_H__	Date.h	9;"	d
+ICT_ERROR_H__	Error.h	9;"	d
+ICT_HeaderFileName_H_	POS.h	10;"	d
+ICT_ITEM_H__	Item.h	11;"	d
+ICT_NONPERISHABLE_H__	NonPerishable.h	9;"	d
+ICT_PERISHABLE_H__	Perishable.h	10;"	d
+ICT_POSAPP_H__	PosApp.h	9;"	d
+ICT_POSIO_H__	PosIO.h	9;"	d
+Item	Item.cpp	/^Item::Item()$/;"	f	class:ict::Item
+Item	Item.cpp	/^Item::Item(const Item& item)$/;"	f	class:ict::Item
+Item	Item.cpp	/^Item::Item(const char sku[], const char* name, double price, bool taxed)$/;"	f	class:ict::Item
+Item	Item.h	/^    Item();$/;"	p	class:ict::Item
+Item	Item.h	/^    Item(const Item&);$/;"	p	class:ict::Item
+Item	Item.h	/^    Item(const char[], const char*, double, bool taxed = true);$/;"	p	class:ict::Item
+Item	Item.h	/^class Item : public PosIO {$/;"	c	namespace:ict
+MAX_NO_ITEMS	POS.h	20;"	d
+MAX_SKU_LEN	POS.h	17;"	d
+MAX_YEAR	POS.h	19;"	d
+MIN_ERROR	Date.h	21;"	d
+MIN_YEAR	POS.h	18;"	d
+MON_ERROR	Date.h	18;"	d
+NO_ERROR	Date.h	15;"	d
+NonPerishable	NonPerishable.h	/^class NonPerishable: public Item {$/;"	c	namespace:ict
+POS	PosApp.cpp	/^void PosApp::POS()$/;"	f	class:ict::PosApp
+POS	PosApp.h	/^    void POS();$/;"	p	class:ict::PosApp
+Perishable	Perishable.cpp	/^Perishable::Perishable()$/;"	f	class:ict::Perishable
+Perishable	Perishable.h	/^    Perishable();$/;"	p	class:ict::Perishable
+Perishable	Perishable.h	/^class Perishable : public NonPerishable {$/;"	c	namespace:ict
+Pos	PosApp.h	/^    PosApp& operator=(const PosApp& Pos) = delete;$/;"	m	class:ict::PosApp
+Pos	PosApp.h	/^    PosApp(const PosApp& Pos) = delete;$/;"	m	class:ict::PosApp
+PosApp	PosApp.cpp	/^PosApp::PosApp(const char* filename, const char* billfname)$/;"	f	class:ict::PosApp
+PosApp	PosApp.h	/^    PosApp(const char* filename, const char* billfname);$/;"	p	class:ict::PosApp
+PosApp	PosApp.h	/^class PosApp {$/;"	c	namespace:ict
+PosIO	PosIO.h	/^class PosIO {$/;"	c	namespace:ict
+TAX	POS.h	16;"	d
+YEAR_ERROR	Date.h	17;"	d
+_name	NonPerishable.cpp	/^    char _name[256];$/;"	l
+_name	NonPerishable.cpp	/^    is >> _name;$/;"	l
+_pause	01-NPErrHandling.cpp	/^void _pause(){$/;"	f
+_pause	02-NPDisplayTest.cpp	/^void _pause(){$/;"	f
+_pause	03-NPSaveLoad.cpp	/^void _pause(){$/;"	f
+_pause	04-PerErrHandling.cpp	/^void _pause(){$/;"	f
+_pause	05-PerDateErrHandling.cpp	/^void _pause()$/;"	f
+_pause	06-PerDisplayTest.cpp	/^void _pause()$/;"	f
+_pause	07-PerSaveLoad.cpp	/^void _pause(){$/;"	f
+_price	NonPerishable.cpp	/^    double _price;$/;"	l
+_price	NonPerishable.cpp	/^    file >> _price;$/;"	l
+_price	NonPerishable.cpp	/^    is >> _price;$/;"	l
+_quantity	NonPerishable.cpp	/^            is >> _quantity;$/;"	l
+_quantity	NonPerishable.cpp	/^    file >> _quantity;$/;"	l
+_quantity	NonPerishable.cpp	/^    int _quantity;$/;"	l
+_signature	NonPerishable.cpp	/^    char _signature = signature();$/;"	l
+_sku	NonPerishable.cpp	/^    char _sku[MAX_SKU_LEN];$/;"	l
+_sku	NonPerishable.cpp	/^    is >> _sku;$/;"	l
+_taxed	NonPerishable.cpp	/^        is >> _taxed;$/;"	l
+_taxed	NonPerishable.cpp	/^    bool _taxed;$/;"	l
+_taxed	NonPerishable.cpp	/^    char _taxed;$/;"	l
+_taxed	NonPerishable.cpp	/^    file >> _taxed;$/;"	l
+addItem	PosApp.cpp	/^void PosApp::addItem(bool perishable)$/;"	f	class:ict::PosApp
+addItem	PosApp.h	/^    void addItem(bool perishable);$/;"	p	class:ict::PosApp
+addToBill	PosApp.cpp	/^void PosApp::addToBill(Item& I)$/;"	f	class:ict::PosApp
+addToBill	PosApp.h	/^    void addToBill(Item& I);$/;"	p	class:ict::PosApp
+asset	PosApp.cpp	/^    double asset = 0;$/;"	l
+bad	Date.cpp	/^bool Date::bad() const$/;"	f	class:ict::Date
+bad	Date.h	/^    bool bad() const;$/;"	p	class:ict::Date
+c	PosApp.cpp	/^            f >> c;$/;"	l
+c	PosApp.cpp	/^        char c;$/;"	l
+c	PosApp.cpp	/^        f >> c;$/;"	l
+ch	01-NPErrHandling.cpp	/^  char ch;$/;"	l
+ch	02-NPDisplayTest.cpp	/^  char ch;$/;"	l
+ch	03-NPSaveLoad.cpp	/^  char ch;$/;"	l
+ch	04-PerErrHandling.cpp	/^  char ch;$/;"	l
+ch	05-PerDateErrHandling.cpp	/^    char ch;$/;"	l
+ch	06-PerDisplayTest.cpp	/^    char ch;$/;"	l
+ch	07-PerSaveLoad.cpp	/^  char ch;$/;"	l
+clear	01-NPErrHandling.cpp	/^      cin.clear();$/;"	p	file:
+clear	01-NPErrHandling.cpp	/^    cin.clear();$/;"	p	file:
+clear	01-NPErrHandling.cpp	/^  f.clear();$/;"	p	file:
+clear	02-NPDisplayTest.cpp	/^  f.clear();$/;"	p	file:
+clear	03-NPSaveLoad.cpp	/^  f.clear();$/;"	p	file:
+clear	03-NPSaveLoad.cpp	/^  npfile.clear();$/;"	p	file:
+clear	04-PerErrHandling.cpp	/^      cin.clear();$/;"	p	file:
+clear	04-PerErrHandling.cpp	/^    cin.clear();$/;"	p	file:
+clear	04-PerErrHandling.cpp	/^  f.clear();$/;"	p	file:
+clear	05-PerDateErrHandling.cpp	/^            cin.clear();$/;"	p	file:
+clear	05-PerDateErrHandling.cpp	/^    f.clear();$/;"	p	file:
+clear	06-PerDisplayTest.cpp	/^    f.clear();$/;"	p	file:
+clear	07-PerSaveLoad.cpp	/^  f.clear();$/;"	p	file:
+clear	07-PerSaveLoad.cpp	/^  prfile.clear();$/;"	p	file:
+clear	Error.cpp	/^void Error::clear()$/;"	f	class:ict::Error
+clear	Error.h	/^    void clear();$/;"	p	class:ict::Error
+clear	NonPerishable.cpp	/^                is.clear();$/;"	p	file:
+clear	NonPerishable.cpp	/^    is.clear();$/;"	p	file:
+clear	NonPerishable.cpp	/^    m_err.clear();$/;"	p	file:
+clear	PosApp.cpp	/^        f.clear();$/;"	p	file:
+clear	PosApp.cpp	/^    cin.clear();$/;"	p	file:
+close	01-NPErrHandling.cpp	/^  f.close();$/;"	p	file:
+close	02-NPDisplayTest.cpp	/^  f.close();$/;"	p	file:
+close	03-NPSaveLoad.cpp	/^  f.close();$/;"	p	file:
+close	03-NPSaveLoad.cpp	/^  npfile.close();$/;"	p	file:
+close	04-PerErrHandling.cpp	/^  f.close();$/;"	p	file:
+close	05-PerDateErrHandling.cpp	/^    f.close();$/;"	p	file:
+close	06-PerDisplayTest.cpp	/^    f.close();$/;"	p	file:
+close	07-PerSaveLoad.cpp	/^  f.close();$/;"	p	file:
+close	07-PerSaveLoad.cpp	/^  prfile.close();$/;"	p	file:
+close	PosApp.cpp	/^        f.close();$/;"	p	file:
+close	PosApp.cpp	/^        file.close();$/;"	p	file:
+close	PosApp.cpp	/^    f.close();$/;"	p	file:
+close	PosApp.cpp	/^    wrfile.close();$/;"	p	file:
+colon	Date.cpp	/^    char slash, comma, colon;$/;"	l
+comma	Date.cpp	/^    char slash, comma, colon;$/;"	l
+cost	Item.cpp	/^double Item::cost() const$/;"	f	class:ict::Item
+cost	Item.h	/^    double cost() const;$/;"	p	class:ict::Item
+dateOnly	Date.cpp	/^bool Date::dateOnly() const$/;"	f	class:ict::Date
+dateOnly	Date.cpp	/^void Date::dateOnly(bool value)$/;"	f	class:ict::Date
+dateOnly	Date.h	/^    bool dateOnly() const;$/;"	p	class:ict::Date
+dateOnly	Date.h	/^    void dateOnly(bool value);$/;"	p	class:ict::Date
+dateOnly	Perishable.cpp	/^        m_expiry.dateOnly(true);$/;"	p	file:
+dateOnly	Perishable.cpp	/^    m_expiry.dateOnly(true);$/;"	p	file:
+days	Date.cpp	/^    int days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31, -1};$/;"	l
+deallocateItems	PosApp.cpp	/^void PosApp::deallocateItems()$/;"	f	class:ict::PosApp
+deallocateItems	PosApp.h	/^    void deallocateItems();$/;"	p	class:ict::PosApp
+dumpFile	01-NPErrHandling.cpp	/^void dumpFile(const char* fname){$/;"	f
+dumpFile	02-NPDisplayTest.cpp	/^void dumpFile(const char* fname){$/;"	f
+dumpFile	03-NPSaveLoad.cpp	/^void dumpFile(const char* fname){$/;"	f
+dumpFile	04-PerErrHandling.cpp	/^void dumpFile(const char* fname){$/;"	f
+dumpFile	05-PerDateErrHandling.cpp	/^void dumpFile(const char *fname)$/;"	f
+dumpFile	06-PerDisplayTest.cpp	/^void dumpFile(const char* fname)$/;"	f
+dumpFile	07-PerSaveLoad.cpp	/^void dumpFile(const char* fname){$/;"	f
+em	Error.h	/^    Error& operator=(const Error& em) = delete;$/;"	m	class:ict::Error
+em	Error.h	/^    Error(const Error& em) = delete;$/;"	m	class:ict::Error
+endl	01-NPErrHandling.cpp	/^      cout << "Error: " << np << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^      cout << "Quantity validaton failed" << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^      cout << "Taxed validaton failed" << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^    << "Name:" <<endl << name << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^    cout << "----Quantity validation test:" << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^    cout << "----Taxed validation test:" << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^    cout << "Did not pass all the tests, please fix the problems and try again." << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^    cout << "Error: " << np << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^    cout << "If proper error messages were displayed, error handling tests passed!" << endl << "Now run 02-NPDisplayTest.cpp." << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^    cout << "Price validation failed" << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^  cout << "----------------------------------" << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^  cout << "----Price validation test:" << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^  cout << "--NonPerishable Error Handling test:" << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^  cout << "Each test must display the error message related to the test." << endl << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^  cout << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^  if (date[0]) cout << "Expiry date: " << date << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^  if (price[0]) cout << "Price: " << price << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^  if (qty[0]) cout << "Quantity: " << qty << endl;$/;"	l
+endl	01-NPErrHandling.cpp	/^  if (taxed[0]) cout << "Taxed: " << taxed << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^    << "Name:" <<endl << name << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "  Yours: " << np << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "----Display test, the output of the Program and yours must match:" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "--Form Display------" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "--Linear------------" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "--Program: " << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "--Yours: " << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "Name:" <<endl << "Box" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "Price after tax: 139.50" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "Price: 123.45" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "Program: 1234   |Box                 | 123.45| TN|   2|   279.00|" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "Quantity: 2" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "Sku: 1234" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << "Total Cost: 279.00" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << endl << "If the program outputs and your outputs match, the test is passed."<<endl<<"Now run 03-NPSaveLoad.cpp" << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  cout << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  if (date[0]) cout << "Expiry date: " << date << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  if (price[0]) cout << "Price: " << price << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  if (qty[0]) cout << "Quantity: " << qty << endl;$/;"	l
+endl	02-NPDisplayTest.cpp	/^  if (taxed[0]) cout << "Taxed: " << taxed << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^    << "N,1234,Box,123.45,0,2" << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^    << "Name:" <<endl << name << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  cout << "  Yours: " << tnp << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  cout << "----NonPerishable Storage and loading test, the output of the Program and yours must match:" << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  cout << "--Load NonPerishable: " << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  cout << "--Save NonPerishable, yours: " << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  cout << "Program: 1234   |Box                 | 123.45|  N|   2|   246.90|" << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  cout << endl << "If the program outputs and your outputs match, the test is passed." << endl << "Now run 04-PerErrHandling.cpp" << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  cout << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  if (date[0]) cout << "Expiry date: " << date << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  if (price[0]) cout << "Price: " << price << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  if (qty[0]) cout << "Quantity: " << qty << endl;$/;"	l
+endl	03-NPSaveLoad.cpp	/^  if (taxed[0]) cout << "Taxed: " << taxed << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^      cout << "Error: " << pr << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^      cout << "Quantity validaton failed" << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^      cout << "Taxed validaton failed" << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^    << "Name:" << endl << name << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^    cout << "----Quantity validation test:" << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^    cout << "----Taxed validation test:" << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^    cout << "Did not pass all the tests, please fix the problems and try again." << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^    cout << "Error: " << pr << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^    cout << "If proper error messages were displayed, error handling tests passed!"<<endl <<"Now run 05-PerDateErrHandling.cpp." << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^    cout << "Price validation failed" << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^  cout << "----------------------------------------------" << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^  cout << "----Price validation test:" << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^  cout << "--Perishable Error Handling test:" << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^  cout << "Each test must display the error message related to the test." << endl << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^  cout << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^  if (date[0]) cout << "Expiry date: " << date << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^  if (price[0]) cout << "Price: " << price << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^  if (qty[0]) cout << "Quantity: " << qty << endl;$/;"	l
+endl	04-PerErrHandling.cpp	/^  if (taxed[0]) cout << "Taxed: " << taxed << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^             << "Now run 06-PerDisplayTest.cpp." << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^            cout << "Date validaton failed" << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^            cout << "Error: " << pr << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^            cout << "Month validaton failed" << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^            cout << "Year validaton failed" << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^        << "Name:" << endl << name << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^        cout << "----Invalid Date Entry validation test:" << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^        cout << "----Invalid Day Entry validation test:" << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^        cout << "----Invalid Month Entry validation test:" << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^        cout << "----Invalid Year Entry validation test:" << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^        cout << "Did not pass all the tests, please fix the problems and try again." << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^    cout << "----------------------------------------------" << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^    cout << "--Perishable Expiry Date Error Handling test:" << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^    cout << "Each test must display the error message related to the test." << endl << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^    cout << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^    if (date[0]) cout << "Expiry date: " << date << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^    if (price[0]) cout << "Price: " << price << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^    if (qty[0]) cout << "Quantity: " << qty << endl;$/;"	l
+endl	05-PerDateErrHandling.cpp	/^    if (taxed[0]) cout << "Taxed: " << taxed << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^            << "Name:" << endl << name << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^         << "Now run 07-PerSaveLoad.cpp" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "  Yours: " << pr << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "----Display test, the output of the Program and yours must match:" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "--Form Display------" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "--Linear------------" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "--Program: " << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "--Yours: " << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "Expiry date: 2015\/11\/26" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "Name:" << endl << "Box" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "Pice: 123.45" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "Price after tax: 139.50" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "Program: 1234   |Box                 | 123.45| TP|   2|   279.00|" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "Quantity: 2" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "Sku: 1234" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << "Total Cost: 279.00" << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    cout << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    if (date[0]) cout << "Expiry date: " << date << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    if (price[0]) cout << "Price: " << price << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    if (qty[0]) cout << "Quantity: " << qty << endl;$/;"	l
+endl	06-PerDisplayTest.cpp	/^    if (taxed[0]) cout << "Taxed: " << taxed << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^    << "Name:" <<endl << name << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^    << "P,1234,Box,123.45,0,2,2015\/11\/25" << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  cout << "  Yours: " << tpr << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  cout << "----Storage and loading test, the output of the Program and yours must match:" << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  cout << "--Load Perishable: " << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  cout << "--Save Perishable, yours: " << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  cout << "Program: 1234   |Box                 | 123.45|  P|   2|   246.90|" << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  cout << endl << "If the program outputs and your outputs match, the test is passed." << endl << "Now you can submit milestone 4!" << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  cout << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  if (date[0]) cout << "Expiry date: " << date << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  if (price[0]) cout << "Price: " << price << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  if (qty[0]) cout << "Quantity: " << qty << endl;$/;"	l
+endl	07-PerSaveLoad.cpp	/^  if (taxed[0]) cout << "Taxed: " << taxed << endl;$/;"	l
+endl	NonPerishable.cpp	/^                os << "Price after tax: " << price()+price()*TAX << endl;$/;"	l
+endl	NonPerishable.cpp	/^                os << "Price after tax: N\/A" << endl;$/;"	l
+endl	NonPerishable.cpp	/^            os << "Name:" << endl;$/;"	l
+endl	NonPerishable.cpp	/^            os << endl;$/;"	l
+endl	NonPerishable.cpp	/^        cout << endl << "Item Entry:" << endl;$/;"	l
+endl	NonPerishable.cpp	/^    cout << "Name:" << endl;$/;"	l
+endl	Perishable.cpp	/^        os << endl;$/;"	l
+endl	Perishable.cpp	/^    cout << endl << "Perishable Item Entry:\\n";$/;"	l
+endl	PosApp.cpp	/^                    cout << "^-----------------------------------^" << endl;$/;"	l
+endl	PosApp.cpp	/^                    cout << "v-----------------------------------v" << endl;$/;"	l
+endl	PosApp.cpp	/^                cout << endl << "Please enter the SKU: ";$/;"	l
+endl	PosApp.cpp	/^                cout << endl;$/;"	l
+endl	PosApp.cpp	/^            cout << "Not found!" << endl;$/;"	l
+endl	PosApp.cpp	/^            cout << "^------------------->" << endl;$/;"	l
+endl	PosApp.cpp	/^            cout << "v------------------->" << endl;$/;"	l
+endl	PosApp.cpp	/^            cout << endl << "===Invalid Selection, try again===" << endl << endl;$/;"	l
+endl	PosApp.cpp	/^            cout << endl << "Goodbye!" << endl << endl;$/;"	l
+endl	PosApp.cpp	/^            cout << endl;$/;"	l
+endl	PosApp.cpp	/^         << "|" << endl;$/;"	l
+endl	PosApp.cpp	/^        cout << "Item added.\\n" << endl;$/;"	l
+endl	PosApp.cpp	/^        cout << "Not found!" << endl << endl;$/;"	l
+endl	PosApp.cpp	/^        cout << "Updated!" << endl << endl;$/;"	l
+endl	PosApp.cpp	/^        cout << endl << "Please enter the number of purchased items: ";$/;"	l
+endl	PosApp.cpp	/^    cout << "-----------------------------------------------^--------------^" << endl << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "-----^--------^--------------------^-------^---^----^---------^" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "-----|--------|--------------------|-------|---|----|---------|" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "0 - exit program" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "1 - List items" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "2 - Add Perishable item " << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "3 - Add Non - Perishable item" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "4 - Update item quantity" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "5 - Show Item" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "6 - POS" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "Row  | SKU    | Item Name          | Price |TX |Qty |   Total |" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "The Sene-Store" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "listing items" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "loading recs" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "v-------------------------------------------------------------v" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << "| " << "2017\/04\/02, 12:42" << "                                           |" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << endl << "Please enter the SKU: ";$/;"	l
+endl	PosApp.cpp	/^    cout << endl << "Row  | SKU    | Item Name          | Price |TX |Qty |   Total |" << endl;$/;"	l
+endl	PosApp.cpp	/^    cout << endl;$/;"	l
+err	Date.cpp	/^    bool err = false;$/;"	l
+errCode	Date.cpp	/^int Date::errCode() const$/;"	f	class:ict::Date
+errCode	Date.cpp	/^void Date::errCode(int errorCode)$/;"	f	class:ict::Date
+errCode	Date.h	/^    int errCode() const;$/;"	p	class:ict::Date
+errCode	Date.h	/^    void errCode(int errorCode);$/;"	p	class:ict::Date
+error	NonPerishable.cpp	/^void NonPerishable::error(const char* _message) { m_err = _message; }$/;"	f	class:ict::NonPerishable
+error	NonPerishable.h	/^    void error(const char* _message);$/;"	p	class:ict::NonPerishable
+f	01-NPErrHandling.cpp	/^  ifstream f(fname);$/;"	p	file:
+f	02-NPDisplayTest.cpp	/^  ifstream f(fname);$/;"	p	file:
+f	03-NPSaveLoad.cpp	/^  ifstream f(fname);$/;"	p	file:
+f	04-PerErrHandling.cpp	/^  ifstream f(fname);$/;"	p	file:
+f	05-PerDateErrHandling.cpp	/^    ifstream f(fname);$/;"	p	file:
+f	06-PerDisplayTest.cpp	/^    ifstream f(fname);$/;"	p	file:
+f	07-PerSaveLoad.cpp	/^  ifstream f(fname);$/;"	p	file:
+f	PosApp.cpp	/^    fstream f;$/;"	l
+file	PosApp.cpp	/^    fstream file(m_filename, ios::out);$/;"	p	file:
+get	PosApp.cpp	/^        cin.get(sku, MAX_SKU_LEN+1);$/;"	p	file:
+getline	NonPerishable.cpp	/^    file.getline(_name, 256, ',');$/;"	p	file:
+getline	NonPerishable.cpp	/^    file.getline(_sku, MAX_SKU_LEN, ',');$/;"	p	file:
+i	04-PerErrHandling.cpp	/^  int i;$/;"	l
+i	05-PerDateErrHandling.cpp	/^    int i;$/;"	l
+i	PosApp.cpp	/^                int i = searchItems(sku);$/;"	l
+i	PosApp.cpp	/^        cout << setw(5) << right << i+1 << "| ";$/;"	l
+ict	Date.cpp	/^namespace ict {$/;"	n	file:
+ict	Date.h	/^namespace ict {$/;"	n
+ict	Error.cpp	/^namespace ict {$/;"	n	file:
+ict	Error.h	/^namespace ict {$/;"	n
+ict	Item.cpp	/^namespace ict {$/;"	n	file:
+ict	Item.h	/^namespace ict {$/;"	n
+ict	NonPerishable.cpp	/^namespace ict {$/;"	n	file:
+ict	NonPerishable.h	/^namespace ict {$/;"	n
+ict	POS.h	/^namespace ict {$/;"	n
+ict	Perishable.cpp	/^namespace ict {$/;"	n	file:
+ict	Perishable.h	/^namespace ict {$/;"	n
+ict	PosApp.cpp	/^namespace ict {$/;"	n	file:
+ict	PosApp.h	/^namespace ict {$/;"	n
+ict	PosIO.h	/^namespace ict {$/;"	n
+idx	PosApp.cpp	/^        int idx = searchItems(sku);$/;"	l
+ignore	PosApp.cpp	/^        cin.ignore();$/;"	p	file:
+index	PosApp.cpp	/^    int index = -1;$/;"	l
+index	PosApp.cpp	/^    int index = searchItems(sku);$/;"	l
+isClear	Error.cpp	/^bool Error::isClear() const$/;"	f	class:ict::Error
+isClear	Error.h	/^    bool isClear() const;$/;"	p	class:ict::Error
+isEmpty	Item.cpp	/^bool Item::isEmpty()$/;"	f	class:ict::Item
+isEmpty	Item.h	/^    bool isEmpty();$/;"	p	class:ict::Item
+item	PosApp.cpp	/^        Item* item = m_items[index-1];$/;"	l
+item	PosApp.cpp	/^        Item* item;$/;"	l
+j	PosApp.cpp	/^            cout << setw(5) << right << j++ << "| ";$/;"	l
+j	PosApp.cpp	/^        int j = 1;$/;"	l
+length	Error.cpp	/^    int length = (int) strlen(m);$/;"	l
+listItems	PosApp.cpp	/^void PosApp::listItems() const$/;"	f	class:ict::PosApp
+listItems	PosApp.h	/^    void listItems() const;$/;"	p	class:ict::PosApp
+load	03-NPSaveLoad.cpp	/^  tnp.load(npfile);$/;"	p	file:
+load	07-PerSaveLoad.cpp	/^  tpr.load(prfile);$/;"	p	file:
+load	NonPerishable.cpp	/^fstream& NonPerishable::load(fstream& file)$/;"	f	class:ict::NonPerishable
+load	NonPerishable.h	/^    virtual fstream& load(fstream& file);$/;"	p	class:ict::NonPerishable
+load	Perishable.cpp	/^    NonPerishable::load(file);$/;"	p	class:ict::NonPerishable	file:
+load	Perishable.cpp	/^fstream& Perishable::load(fstream& file)$/;"	f	class:ict::Perishable
+load	Perishable.h	/^    virtual fstream& load(fstream&);$/;"	p	class:ict::Perishable
+load	PosApp.cpp	/^            item->load(f);$/;"	p	file:
+load	PosApp.cpp	/^            m_items[m_noOfItems]->load(f);$/;"	p	file:
+load	PosIO.h	/^    virtual fstream& load(fstream& file) = 0;$/;"	p	class:ict::PosIO
+loadRecs	PosApp.cpp	/^void PosApp::loadRecs()$/;"	f	class:ict::PosApp
+loadRecs	PosApp.h	/^    void loadRecs();$/;"	p	class:ict::PosApp
+lt	Date.cpp	/^    tm lt = *localtime(&t);$/;"	l
+m_billfname	PosApp.h	/^    char m_billfname[128];$/;"	m	class:ict::PosApp
+m_dateOnly	Date.h	/^    bool m_dateOnly;$/;"	m	class:ict::Date
+m_day	Date.cpp	/^        is >> m_year >> slash >> m_mon >> slash >> m_day;$/;"	l
+m_day	Date.cpp	/^    os << m_year << "\/" << m_mon << "\/" << m_day;$/;"	l
+m_day	Date.h	/^    int m_day;$/;"	m	class:ict::Date
+m_err	NonPerishable.cpp	/^                cout << m_err;$/;"	l
+m_err	NonPerishable.cpp	/^            cout << m_err;$/;"	l
+m_err	NonPerishable.cpp	/^        cout << m_err;$/;"	l
+m_err	NonPerishable.h	/^    Error m_err;$/;"	m	class:ict::NonPerishable
+m_err	Perishable.cpp	/^            cout << m_err;$/;"	l
+m_err	Perishable.h	/^    Error m_err;$/;"	m	class:ict::Perishable
+m_expiry	Perishable.cpp	/^    file << ',' << m_expiry;$/;"	l
+m_expiry	Perishable.h	/^    Date m_expiry;$/;"	m	class:ict::Perishable
+m_filename	PosApp.h	/^    char m_filename[128];$/;"	m	class:ict::PosApp
+m_hour	Date.h	/^    int m_hour;$/;"	m	class:ict::Date
+m_items	PosApp.h	/^    Item* m_items[MAX_NO_ITEMS];$/;"	m	class:ict::PosApp
+m_message	Error.h	/^    char* m_message;$/;"	m	class:ict::Error
+m_min	Date.cpp	/^        is >> m_year >> slash >> m_mon >> slash >> m_day >> comma >> m_hour >> colon >> m_min;$/;"	l
+m_min	Date.cpp	/^        os << ", " << m_hour << ":" << m_min;$/;"	l
+m_min	Date.h	/^    int m_min;$/;"	m	class:ict::Date
+m_mon	Date.h	/^    int m_mon;$/;"	m	class:ict::Date
+m_name	Item.h	/^    char* m_name;$/;"	m	class:ict::Item
+m_noOfItems	PosApp.h	/^    int m_noOfItems;$/;"	m	class:ict::PosApp
+m_price	Item.h	/^    double m_price;$/;"	m	class:ict::Item
+m_quantity	Item.h	/^    int m_quantity;$/;"	m	class:ict::Item
+m_readErrorCode	Date.h	/^    int m_readErrorCode;$/;"	m	class:ict::Date
+m_sku	Item.h	/^    char m_sku[MAX_SKU_LEN+1];$/;"	m	class:ict::Item
+m_taxed	Item.h	/^    bool m_taxed;$/;"	m	class:ict::Item
+m_year	Date.h	/^    int m_year;$/;"	m	class:ict::Date
+main	01-NPErrHandling.cpp	/^int main(){$/;"	f
+main	02-NPDisplayTest.cpp	/^int main(){$/;"	f
+main	03-NPSaveLoad.cpp	/^int main(){$/;"	f
+main	04-PerErrHandling.cpp	/^int main(){$/;"	f
+main	05-PerDateErrHandling.cpp	/^int main()$/;"	f
+main	06-PerDisplayTest.cpp	/^int main()$/;"	f
+main	07-PerSaveLoad.cpp	/^int main(){$/;"	f
+main	244_fp_main_prof.cpp	/^int main(){$/;"	f
+main	PosAppMain.cpp	/^int main()$/;"	f
+mdays	Date.cpp	/^int Date::mdays() const$/;"	f	class:ict::Date
+mdays	Date.h	/^    int mdays() const;$/;"	p	class:ict::Date
+menu	PosApp.cpp	/^int PosApp::menu()$/;"	f	class:ict::PosApp
+menu	PosApp.h	/^    int menu();$/;"	p	class:ict::PosApp
+message	Error.cpp	/^void Error::message(const char* m)$/;"	f	class:ict::Error
+message	Error.h	/^    void message(const char* m);$/;"	p	class:ict::Error
+mon	Date.cpp	/^    int mon = m_mon>=1 && m_mon<=12 ? m_mon : 13;$/;"	l
+name	Item.cpp	/^char* Item::name() const$/;"	f	class:ict::Item
+name	Item.cpp	/^void Item::name(const char* n)$/;"	f	class:ict::Item
+name	Item.h	/^    char* name() const;$/;"	p	class:ict::Item
+name	Item.h	/^    void name(const char*);$/;"	p	class:ict::Item
+name	NonPerishable.cpp	/^            os << name() << "|";$/;"	p	file:
+name	NonPerishable.cpp	/^            os << name();$/;"	p	file:
+np	01-NPErrHandling.cpp	/^    cin >> np;$/;"	l
+np	01-NPErrHandling.cpp	/^  NonPerishable np;$/;"	l
+np	01-NPErrHandling.cpp	/^  cin >> np;$/;"	l
+np	02-NPDisplayTest.cpp	/^  NonPerishable np;$/;"	l
+np	02-NPDisplayTest.cpp	/^  cin >> np;$/;"	l
+np	03-NPSaveLoad.cpp	/^  NonPerishable np;$/;"	l
+np	03-NPSaveLoad.cpp	/^  cin >> np;$/;"	l
+npfile	01-NPErrHandling.cpp	/^  fstream npfile(FileName, ios::out);$/;"	p	file:
+npfile	02-NPDisplayTest.cpp	/^  fstream npfile(FileName, ios::out);$/;"	p	file:
+npfile	03-NPSaveLoad.cpp	/^  fstream npfile(FileName, ios::out);$/;"	p	file:
+npfile	06-PerDisplayTest.cpp	/^    fstream npfile(FileName, ios::out);$/;"	p	file:
+ok	01-NPErrHandling.cpp	/^  bool ok = true;$/;"	l
+ok	04-PerErrHandling.cpp	/^  bool ok = true;$/;"	l
+ok	05-PerDateErrHandling.cpp	/^    bool ok = true;$/;"	l
+ok	NonPerishable.cpp	/^bool NonPerishable::ok() const { return m_err.isClear(); }$/;"	f	class:ict::NonPerishable
+ok	NonPerishable.h	/^    bool ok() const;$/;"	p	class:ict::NonPerishable
+open	03-NPSaveLoad.cpp	/^  npfile.open(FileName, ios::in);$/;"	p	file:
+open	07-PerSaveLoad.cpp	/^  prfile.open(FileName, ios::in);$/;"	p	file:
+open	PosApp.cpp	/^        f.open(m_filename, fstream::out);$/;"	p	file:
+open	PosApp.cpp	/^    f.open(m_billfname, fstream::in);$/;"	p	file:
+open	PosApp.cpp	/^    f.open(m_billfname, fstream::out | fstream::trunc);$/;"	p	file:
+open	PosApp.cpp	/^    f.open(m_filename, fstream::in);$/;"	p	file:
+operator !=	Date.cpp	/^bool Date::operator!=(const Date& D) const$/;"	f	class:ict::Date
+operator !=	Date.h	/^    bool operator!=(const Date&) const;$/;"	p	class:ict::Date
+operator +=	Item.cpp	/^double operator+=(double& number, const Item& item)$/;"	f	namespace:ict
+operator +=	Item.cpp	/^int Item::operator+=(int _quantity)$/;"	f	class:ict::Item
+operator +=	Item.h	/^    int operator+=(int);$/;"	p	class:ict::Item
+operator +=	Item.h	/^double operator+=(double& number, const Item& item);$/;"	p	namespace:ict
+operator -=	Item.cpp	/^int Item::operator-=(int _quantity)$/;"	f	class:ict::Item
+operator -=	Item.h	/^    int operator-=(int);$/;"	p	class:ict::Item
+operator <	Date.cpp	/^bool Date::operator<(const Date& D) const$/;"	f	class:ict::Date
+operator <	Date.h	/^    bool operator<(const Date&) const;$/;"	p	class:ict::Date
+operator <<	Date.cpp	/^ostream& operator<<(ostream& os, const Date& date)$/;"	f	namespace:ict
+operator <<	Date.h	/^ostream& operator<<(ostream& os, const Date& date);$/;"	p	namespace:ict
+operator <<	Error.cpp	/^ostream& operator<<(ostream& os, const Error& error)$/;"	f	namespace:ict
+operator <<	Error.h	/^ostream& operator<<(ostream& os, const Error& error);$/;"	p	namespace:ict
+operator <<	Item.cpp	/^ostream& operator<<(ostream& os, const Item& w)$/;"	f	namespace:ict
+operator <<	Item.h	/^ostream& operator<<(ostream&, const Item&);$/;"	p	namespace:ict
+operator <<	NonPerishable.cpp	/^ostream& operator<<(ostream& os, const NonPerishable& nonPerishable)$/;"	f	namespace:ict
+operator <<	NonPerishable.h	/^ostream& operator<<(ostream&, const NonPerishable&);$/;"	p	namespace:ict
+operator <<	Perishable.cpp	/^ostream& operator<<(ostream& os, const Perishable& perishable)$/;"	f	namespace:ict
+operator <<	Perishable.h	/^ostream& operator<<(ostream&, const Perishable&);$/;"	p	namespace:ict
+operator <=	Date.cpp	/^bool Date::operator<=(const Date& D) const$/;"	f	class:ict::Date
+operator <=	Date.h	/^    bool operator<=(const Date&) const;$/;"	p	class:ict::Date
+operator =	Error.cpp	/^void Error::operator=(const char* errorMessage)$/;"	f	class:ict::Error
+operator =	Error.h	/^    void operator=(const char* errorMessage);$/;"	p	class:ict::Error
+operator =	Item.cpp	/^Item& Item::operator=(const Item& item)$/;"	f	class:ict::Item
+operator =	Item.h	/^    Item& operator=(const Item&);$/;"	p	class:ict::Item
+operator ==	Date.cpp	/^bool Date::operator==(const Date& D) const$/;"	f	class:ict::Date
+operator ==	Date.h	/^    bool operator==(const Date&) const;$/;"	p	class:ict::Date
+operator ==	Item.cpp	/^bool Item::operator==(const char* _sku)$/;"	f	class:ict::Item
+operator ==	Item.h	/^    bool operator==(const char*);$/;"	p	class:ict::Item
+operator >	Date.cpp	/^bool Date::operator>(const Date& D) const$/;"	f	class:ict::Date
+operator >	Date.h	/^    bool operator>(const Date&) const;$/;"	p	class:ict::Date
+operator >=	Date.cpp	/^bool Date::operator>=(const Date& D) const$/;"	f	class:ict::Date
+operator >=	Date.h	/^    bool operator>=(const Date&) const;$/;"	p	class:ict::Date
+operator >>	Date.cpp	/^istream& operator>>(istream& is, Date& date)$/;"	f	namespace:ict
+operator >>	Date.h	/^istream& operator>>(istream& is, Date& date);$/;"	p	namespace:ict
+operator >>	Item.cpp	/^istream& operator>>(istream& is, Item& r)$/;"	f	namespace:ict
+operator >>	Item.h	/^istream& operator>>(istream&, Item&);$/;"	p	namespace:ict
+operator >>	NonPerishable.cpp	/^istream& operator>>(istream& is, NonPerishable& nonPerishable)$/;"	f	namespace:ict
+operator >>	NonPerishable.h	/^istream& operator>>(istream&, NonPerishable&);$/;"	p	namespace:ict
+operator >>	Perishable.cpp	/^istream& operator>>(istream& is, Perishable& perishable)$/;"	f	namespace:ict
+operator >>	Perishable.h	/^istream& operator>>(istream&, Perishable&);$/;"	p	namespace:ict
+operator bool	Error.cpp	/^Error::operator bool() const$/;"	f	class:ict::Error
+operator bool	Error.h	/^    operator bool() const;$/;"	p	class:ict::Error
+operator const char*	Error.cpp	/^Error::operator const char*() const$/;"	f	class:ict::Error
+operator const char*	Error.h	/^    operator const char*() const;$/;"	p	class:ict::Error
+piv	01-NPErrHandling.cpp	/^void piv(const char* upc, const char* name, const char* price = "", $/;"	f
+piv	02-NPDisplayTest.cpp	/^void piv(const char* upc, const char* name, const char* price = "", $/;"	f
+piv	03-NPSaveLoad.cpp	/^void piv(const char* upc, const char* name, const char* price = "", $/;"	f
+piv	04-PerErrHandling.cpp	/^void piv(const char* upc, const char* name, const char* price = "",$/;"	f
+piv	05-PerDateErrHandling.cpp	/^void piv(const char *upc, const char *name, const char *price = "",$/;"	f
+piv	06-PerDisplayTest.cpp	/^void piv(const char* upc, const char* name, const char* price = "",$/;"	f
+piv	07-PerSaveLoad.cpp	/^void piv(const char* upc, const char* name, const char* price = "", $/;"	f
+pr	04-PerErrHandling.cpp	/^    cin >> pr;$/;"	l
+pr	04-PerErrHandling.cpp	/^  Perishable pr;$/;"	l
+pr	04-PerErrHandling.cpp	/^  cin >> pr;$/;"	l
+pr	05-PerDateErrHandling.cpp	/^        cin >> pr;$/;"	l
+pr	05-PerDateErrHandling.cpp	/^    Perishable pr;$/;"	l
+pr	06-PerDisplayTest.cpp	/^    Perishable pr;$/;"	l
+pr	06-PerDisplayTest.cpp	/^    cin >> pr;$/;"	l
+pr	07-PerSaveLoad.cpp	/^  Perishable pr;$/;"	l
+pr	07-PerSaveLoad.cpp	/^  cin >> pr;$/;"	l
+prfile	07-PerSaveLoad.cpp	/^  fstream prfile(FileName, ios::out);$/;"	p	file:
+price	Item.cpp	/^double Item::price() const$/;"	f	class:ict::Item
+price	Item.cpp	/^void Item::price(double p)$/;"	f	class:ict::Item
+price	Item.h	/^    double price() const;$/;"	p	class:ict::Item
+price	Item.h	/^    void price(double);$/;"	p	class:ict::Item
+price	NonPerishable.cpp	/^            os << price() << "|";$/;"	p	file:
+put	01-NPErrHandling.cpp	/^    cout.put(ch);$/;"	p	file:
+put	02-NPDisplayTest.cpp	/^    cout.put(ch);$/;"	p	file:
+put	03-NPSaveLoad.cpp	/^    cout.put(ch);$/;"	p	file:
+put	04-PerErrHandling.cpp	/^    cout.put(ch);$/;"	p	file:
+put	05-PerDateErrHandling.cpp	/^        cout.put(ch);$/;"	p	file:
+put	06-PerDisplayTest.cpp	/^        cout.put(ch);$/;"	p	file:
+put	07-PerSaveLoad.cpp	/^    cout.put(ch);$/;"	p	file:
+quant	PosApp.cpp	/^        cin >> quant;$/;"	l
+quant	PosApp.cpp	/^    int quant;$/;"	l
+quantity	Item.cpp	/^int Item::quantity() const$/;"	f	class:ict::Item
+quantity	Item.cpp	/^void Item::quantity(int q)$/;"	f	class:ict::Item
+quantity	Item.h	/^    int quantity() const;$/;"	p	class:ict::Item
+quantity	Item.h	/^    void quantity(int);$/;"	p	class:ict::Item
+quantity	NonPerishable.cpp	/^            os << quantity() << "|";$/;"	p	file:
+quantity	PosApp.cpp	/^        wrfile << "P," << I.sku() << "," << I.name() << "," << I.price() << "," << I.taxed() << "," << I.quantity()$/;"	p	file:
+read	Date.cpp	/^    date.read(is);$/;"	p	file:
+read	Date.cpp	/^istream& Date::read(istream& is)$/;"	f	class:ict::Date
+read	Date.h	/^    istream& read(istream& is);$/;"	p	class:ict::Date
+read	Item.cpp	/^    r.read(is);$/;"	p	file:
+read	NonPerishable.cpp	/^    nonPerishable.read(is);$/;"	p	file:
+read	NonPerishable.cpp	/^istream& NonPerishable::read(istream& is)$/;"	f	class:ict::NonPerishable
+read	NonPerishable.h	/^    virtual istream& read(istream& is);$/;"	p	class:ict::NonPerishable
+read	Perishable.cpp	/^        m_expiry.read(is);$/;"	p	file:
+read	Perishable.cpp	/^    NonPerishable::read(is);$/;"	p	class:ict::NonPerishable	file:
+read	Perishable.cpp	/^    perishable.read(is);$/;"	p	file:
+read	Perishable.cpp	/^istream& Perishable::read(istream& is)$/;"	f	class:ict::Perishable
+read	Perishable.h	/^    virtual istream& read(istream&);$/;"	p	class:ict::Perishable
+read	PosApp.cpp	/^    m_items[m_noOfItems]->read(cin);$/;"	p	file:
+read	PosIO.h	/^    virtual istream& read(istream& is) = 0;$/;"	p	class:ict::PosIO
+ret	Error.cpp	/^    bool ret = false;$/;"	l
+run	244_fp_main_prof.cpp	/^  app.run();$/;"	p	file:
+run	PosApp.cpp	/^void PosApp::run()$/;"	f	class:ict::PosApp
+run	PosApp.h	/^    void run();$/;"	p	class:ict::PosApp
+run	PosAppMain.cpp	/^    app.run();$/;"	p	file:
+save	NonPerishable.cpp	/^fstream& NonPerishable::save(fstream& file) const$/;"	f	class:ict::NonPerishable
+save	NonPerishable.h	/^    virtual fstream& save(fstream& file) const;$/;"	p	class:ict::NonPerishable
+save	Perishable.cpp	/^    NonPerishable::save(file);$/;"	p	class:ict::NonPerishable	file:
+save	Perishable.cpp	/^fstream& Perishable::save(fstream& file) const$/;"	f	class:ict::Perishable
+save	Perishable.h	/^    virtual fstream& save(fstream&) const;$/;"	p	class:ict::Perishable
+save	PosApp.cpp	/^                m_items[i]->save(file);$/;"	p	file:
+save	PosIO.h	/^    virtual fstream& save(fstream& file) const = 0;$/;"	p	class:ict::PosIO
+saveRecs	PosApp.cpp	/^void PosApp::saveRecs()$/;"	f	class:ict::PosApp
+saveRecs	PosApp.h	/^    void saveRecs();$/;"	p	class:ict::PosApp
+searchItems	PosApp.cpp	/^int PosApp::searchItems(const char* sku) const$/;"	f	class:ict::PosApp
+searchItems	PosApp.h	/^    int searchItems(const char* sku) const;$/;"	p	class:ict::PosApp
+select	PosApp.cpp	/^    cin >> select;$/;"	l
+select	PosApp.cpp	/^    int select;$/;"	l
+set	Date.cpp	/^void Date::set()$/;"	f	class:ict::Date
+set	Date.cpp	/^void Date::set(int year, int mon, int day, int hour, int min)$/;"	f	class:ict::Date
+set	Date.h	/^    void set();$/;"	p	class:ict::Date
+set	Date.h	/^    void set(int year, int mon, int day, int hour, int min);$/;"	p	class:ict::Date
+setf	NonPerishable.cpp	/^            os.setf(ios::fixed);$/;"	p	file:
+setf	NonPerishable.cpp	/^            os.setf(ios::left);$/;"	p	file:
+setf	NonPerishable.cpp	/^            os.setf(ios::right);$/;"	p	file:
+setstate	NonPerishable.cpp	/^                is.setstate(ios::failbit);$/;"	p	file:
+setstate	NonPerishable.cpp	/^            is.setstate(ios::failbit);$/;"	p	file:
+setstate	NonPerishable.cpp	/^        is.setstate(ios::failbit); \/\/ The read returns the is.$/;"	p	file:
+setstate	Perishable.cpp	/^            is.setstate(ios::failbit);$/;"	p	file:
+showBill	PosApp.cpp	/^void PosApp::showBill()$/;"	f	class:ict::PosApp
+showBill	PosApp.h	/^    void showBill();$/;"	p	class:ict::PosApp
+signature	NonPerishable.cpp	/^            os << signature() << "|";$/;"	p	file:
+signature	NonPerishable.h	/^    virtual char signature() const { return 'N'; }$/;"	f	class:ict::NonPerishable
+signature	Perishable.cpp	/^char Perishable::signature() const$/;"	f	class:ict::Perishable
+signature	Perishable.h	/^    char signature() const;$/;"	p	class:ict::Perishable
+sku	Item.cpp	/^const char* Item::sku() const$/;"	f	class:ict::Item
+sku	Item.cpp	/^void Item::sku(const char* s)$/;"	f	class:ict::Item
+sku	Item.h	/^    const char* sku() const;$/;"	p	class:ict::Item
+sku	Item.h	/^    void sku(const char*);$/;"	p	class:ict::Item
+sku	NonPerishable.cpp	/^            os << left << sku() << "|";$/;"	p	file:
+sku	PosApp.cpp	/^                char sku[MAX_SKU_LEN];$/;"	l
+sku	PosApp.cpp	/^                cin >> sku;$/;"	l
+sku	PosApp.cpp	/^    char sku[MAX_SKU_LEN] = {'\\0'};$/;"	l
+sku	PosApp.cpp	/^    char sku[MAX_SKU_LEN];$/;"	l
+sku	PosApp.cpp	/^    cin >> sku;$/;"	l
+slash	Date.cpp	/^    char slash, comma, colon;$/;"	l
+t	Date.cpp	/^    time_t t = time(NULL);$/;"	l
+tag	PosApp.cpp	/^            f >> tag;$/;"	l
+tag	PosApp.cpp	/^        char tag;$/;"	l
+tag	PosApp.cpp	/^        f >> tag;$/;"	l
+taxed	03-NPSaveLoad.cpp	/^  np.taxed(false);$/;"	p	file:
+taxed	07-PerSaveLoad.cpp	/^  pr.taxed(false);$/;"	p	file:
+taxed	Item.cpp	/^bool Item::taxed() const$/;"	f	class:ict::Item
+taxed	Item.cpp	/^void Item::taxed(bool t)$/;"	f	class:ict::Item
+taxed	Item.h	/^    bool taxed() const;$/;"	p	class:ict::Item
+taxed	Item.h	/^    void taxed(bool);$/;"	p	class:ict::Item
+testRun	PosApp.cpp	/^void PosApp::testRun()$/;"	f	class:ict::PosApp
+testRun	PosApp.h	/^    void testRun();$/;"	p	class:ict::PosApp
+tnp	03-NPSaveLoad.cpp	/^  NonPerishable tnp;$/;"	l
+tpr	07-PerSaveLoad.cpp	/^  Perishable tpr;$/;"	l
+truncateBillFile	PosApp.cpp	/^void PosApp::truncateBillFile()$/;"	f	class:ict::PosApp
+truncateBillFile	PosApp.h	/^    void truncateBillFile();$/;"	p	class:ict::PosApp
+updateQty	PosApp.cpp	/^void PosApp::updateQty()$/;"	f	class:ict::PosApp
+updateQty	PosApp.h	/^    void updateQty();$/;"	p	class:ict::PosApp
+value	Date.cpp	/^int Date::value() const$/;"	f	class:ict::Date
+value	Date.h	/^    int value() const;$/;"	p	class:ict::Date
+width	NonPerishable.cpp	/^            os.width(MAX_SKU_LEN);$/;"	p	file:
+wrfile	PosApp.cpp	/^    fstream wrfile(m_billfname, ios::out | ios::app);$/;"	p	file:
+write	02-NPDisplayTest.cpp	/^  np.write(cout, false);$/;"	p	file:
+write	06-PerDisplayTest.cpp	/^    pr.write(cout, false);$/;"	p	file:
+write	Date.cpp	/^    date.write(os);$/;"	p	file:
+write	Date.cpp	/^ostream& Date::write(ostream& os) const$/;"	f	class:ict::Date
+write	Date.h	/^    ostream& write(ostream& os) const;$/;"	p	class:ict::Date
+write	Item.cpp	/^    w.write(os, true);$/;"	p	file:
+write	NonPerishable.cpp	/^    nonPerishable.write(os, true);$/;"	p	file:
+write	NonPerishable.cpp	/^ostream& NonPerishable::write(ostream& os, bool linear) const$/;"	f	class:ict::NonPerishable
+write	NonPerishable.h	/^    virtual ostream& write(ostream& os, bool linear) const;$/;"	p	class:ict::NonPerishable
+write	Perishable.cpp	/^        m_expiry.write(os);$/;"	p	file:
+write	Perishable.cpp	/^    NonPerishable::write(os, linear);$/;"	p	class:ict::NonPerishable	file:
+write	Perishable.cpp	/^    perishable.write(os, true);$/;"	p	file:
+write	Perishable.cpp	/^ostream& Perishable::write(ostream& os, bool linear) const$/;"	f	class:ict::Perishable
+write	Perishable.h	/^    virtual ostream& write(ostream&, bool) const;$/;"	p	class:ict::Perishable
+write	PosApp.cpp	/^                    m_items[i-1]->write(cout, false);$/;"	p	file:
+write	PosApp.cpp	/^            item->write(cout, true);$/;"	p	file:
+write	PosApp.cpp	/^        item->write(cout, false);$/;"	p	file:
+write	PosApp.cpp	/^        m_items[i]->write(cout, true);$/;"	p	file:
+write	PosIO.h	/^    virtual ostream& write(ostream& os, bool linear) const = 0;$/;"	p	class:ict::PosIO
+~Error	Error.cpp	/^Error::~Error()$/;"	f	class:ict::Error
+~Error	Error.h	/^    virtual ~Error();$/;"	p	class:ict::Error
+~Item	Item.cpp	/^Item::~Item()$/;"	f	class:ict::Item
+~Item	Item.h	/^    virtual ~Item();$/;"	p	class:ict::Item
+~PosApp	PosApp.cpp	/^PosApp::~PosApp()$/;"	f	class:ict::PosApp
+~PosApp	PosApp.h	/^    ~PosApp();$/;"	p	class:ict::PosApp
